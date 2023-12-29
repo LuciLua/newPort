@@ -1,8 +1,9 @@
-import { Raleway } from "next/font/google"
+import { Montserrat } from "next/font/google"
 import "../styles/globals.css"
 import { Providers } from "../components/Providers"
+import { Menu } from "../components/Menu/Menu"
 
-const raleway = Raleway({ subsets: ["latin-ext"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
+const montserrat = Montserrat({ subsets: ["latin-ext"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export default function root_layout({ children }) {
     return (
@@ -12,8 +13,9 @@ export default function root_layout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>LuciLua Portfólio</title>
             </head>
-            <body className={raleway.className}>
+            <body className={montserrat.className}>
                 <Providers>
+                    <Menu />
                     {children}
                 </Providers>
             </body>
