@@ -39,23 +39,23 @@ export function InitialBox() {
             </div>
 
             <footer className="gap-[30px] flex border-[#000] border-t-[3px] mt-auto w-full p-2 overflow-x-hidden">
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">NextJS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">ReactJS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Javascript</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">SASS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">CSS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">NodeJS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">TailwindCSS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">VueJS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">AngularJS</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Flexbox</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">HTML</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Express</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">API</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Git</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">GitHub</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">NPM</div>
-                <div className="bg-[#ddd] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Yarn</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">NextJS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">ReactJS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Javascript</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">SASS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">CSS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">NodeJS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">TailwindCSS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">VueJS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">AngularJS</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Flexbox</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">HTML</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Express</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">API</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Git</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">GitHub</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">NPM</div>
+                <div className="font-[600] text-black text-[15px] w-fit py-1 px-2 rounded-[2px]">Yarn</div>
             </footer>
 
         </div>

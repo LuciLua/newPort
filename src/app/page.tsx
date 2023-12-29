@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { BiMailSend } from "react-icons/bi"
 import { InitialBox } from "../components/InitialBox"
+import { Projeto } from "../components/Projeto"
 
 export default function homepage() {
     return (
@@ -14,12 +15,20 @@ export default function homepage() {
             <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
                 <h1 className="text-[35px] font-[700] pb-[20px]">Projetos</h1>
                 <div className="flex w-full justify-center gap-5 flex-wrap">
-                    <div className="rounded-[4px] bg-[#ddd] w-[412px] h-[250px] min-w-[412px] min-h-[250px] "/>
-                    <div className="rounded-[4px] bg-[#ddd] w-[412px] h-[250px] min-w-[412px] min-h-[250px]"/>
-                    <div className="rounded-[4px] bg-[#ddd] w-[412px] h-[250px] min-w-[412px] min-h-[250px]"/>
-                    <div className="rounded-[4px] bg-[#ddd] w-[412px] h-[250px] min-w-[412px] min-h-[250px]"/>
-                    <div className="rounded-[4px] bg-[#ddd] w-[412px] h-[250px] min-w-[412px] min-h-[250px]"/>
-                    <div className="rounded-[4px] bg-[#ddd] w-[412px] h-[250px] min-w-[412px] min-h-[250px]"/>
+                    <Projeto name={"1"} img={"1"}/>
+                    <Projeto name={"2"} img={"2"}/>
+                    <Projeto name={"3"} img={"3"}/>
+                </div>
+            </div>
+            <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
+                <h1 className="text-[35px] font-[700] pb-[20px]">Projetos</h1>
+                <div className="flex w-full justify-center gap-5 flex-wrap">
+                    <Projeto name={"1"} img={"1"}/>
+                    <Projeto name={"2"} img={"2"}/>
+                    <Projeto name={"3"} img={"3"}/>
+                    <Projeto name={"3"} img={"3"}/>
+                    <Projeto name={"3"} img={"3"}/>
+                    <Projeto name={"3"} img={"3"}/>
                 </div>
             </div>
         </div>
