@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "prettier": "prettier ./src --check",
+    "format": "prettier ./src --check --write"
   },
   "dependencies": {
     "next": "^14.0.4",
@@ -21,6 +23,8 @@
     "autoprefixer": "^10.4.16",
     "framer-motion": "^10.16.16",
     "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.10",
     "react-icons": "^4.12.0",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.3.3"
