@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll } from "framer-motion"
 
 export const spring = {
   gentle: {
@@ -10,7 +10,7 @@ export const spring = {
     stiffness: 100,
     velocity: 2,
   },
-};
+}
 
 export function Projeto({ name, img }) {
   const container = {
@@ -18,9 +18,9 @@ export function Projeto({ name, img }) {
       width: `100%`,
       transition: spring.gentle,
     },
-  };
+  }
 
-  const { scrollYProgress, scrollX, scrollY } = useScroll();
+  const { scrollYProgress, scrollX, scrollY } = useScroll()
 
   return (
     <motion.div
@@ -44,5 +44,5 @@ export function Projeto({ name, img }) {
         <h2>{img}</h2>
       </div>
     </motion.div>
-  );
+  )
 }

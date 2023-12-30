@@ -1,12 +1,12 @@
-import { Montserrat } from "next/font/google";
-import "../styles/globals.css";
-import { Providers } from "../components/Providers";
-import { Menu } from "../components/Menu/Menu";
+import { Montserrat } from "next/font/google"
+import "../styles/globals.css"
+import { Providers } from "../components/Providers"
+import { Menu } from "../components/Menu/Menu"
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+})
 
 export default function root_layout({ children }) {
   return (
@@ -23,5 +23,5 @@ export default function root_layout({ children }) {
         </Providers>
       </body>
     </html>
-  );
+  )
 }
