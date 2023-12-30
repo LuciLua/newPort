@@ -22,5 +22,5 @@ export function Menu() {
         </li>
       </ul>
     </div>
-  );
+  )
 }

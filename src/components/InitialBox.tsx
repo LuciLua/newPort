@@ -1,5 +1,5 @@
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import { BiMailSend } from "react-icons/bi";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
+import { BiMailSend } from "react-icons/bi"
 
 export function InitialBox() {
   return (
@@ -103,5 +103,5 @@ export function InitialBox() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
