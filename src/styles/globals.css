@@ -15,4 +15,6 @@ html,
 body {
   min-height: 100svh;
   width: 100%;
+  transform: scaleZ(100px);
+  transform-style: preserve-3d;
 }

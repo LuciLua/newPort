@@ -1,47 +1,36 @@
 "use client"
 
-import { motion, useScroll } from "framer-motion"
+import { motion, useInView } from "framer-motion"
+import { useRef } from "react";
 
-export const spring = {
-  gentle: {
-    type: `spring`,
-    mass: 1,
-    damping: 50,
-    stiffness: 100,
-    velocity: 2,
-  },
-}
+export function Projeto({ name, img, url, stack }) {
 
-export function Projeto({ name, img }) {
-  const container = {
-    expanded: {
-      width: `100%`,
-      transition: spring.gentle,
-    },
-  }
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
 
-  const { scrollYProgress, scrollX, scrollY } = useScroll()
+
+  const rotated = `${["translate3d(20px, -10px, 5px)"+"rotateY(20deg)"+"rotateX(20deg)"]}`
 
   return (
     <motion.div
-      initial="hidden"
-      whileInView="visible"
-      whileDrag={{ scaleX: 1.2 }}
+      className="w-fit rounded-[12px] max-w-[350px] h-fit min-w-[300px] min-h-[250px] border-[1px] overflow-hidden border-[#ddd]"
+      ref={ref}
       style={{
-        scaleX: scrollYProgress,
-        animation: "ease-out",
+        transform: isInView ? "none" : rotated,
+        opacity: isInView ? 1 : 0,
+        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
       }}
-      // initial={{ opacity: 0 }}
-      // whileInView={{ opacity: 1 }}
-      drag={"x"}
-      dragElastic={0.01}
-      dragConstraints={{ top: 2, left: 0, right: 1 }}
-      animate="expanded"
-      variants={container}
     >
-      <div className="rounded-[4px] bg-[#ddd] w-[412px] h-[250px] min-w-[412px] min-h-[250px]">
-        <h1>{name}</h1>
-        <h2>{img}</h2>
+      <img src={img} alt="image_project" className="w-full object-contain h-fit opacity-90  grayscale-[0.3] contrast-[1.1] brightness-[0.95]" />
+      <div className="flex w-full gap-2 h-fit border-y-[1px] border-y-[#ddd] px-[4px] py-[10px] flex-wrap">
+        {stack.map(tool => {
+          return (<div className="bg-[#ebebeb] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]">{tool}</div>)
+        })}
+      </div>
+      <div className="flex justify-between h-fit items-center mt-3 py-2 px-5">
+        <h1 className="text-black text-[20px] font-[700] ">{name}</h1>
+        <a className=" text-black underline px-5 py-1 h-fit rounded-[3px]" href={url}>Sobre</a>
+        <a className="bg-black text-white px-5 py-1 h-fit rounded-[3px]" href={url}>Acessar</a>
       </div>
     </motion.div>
   )
