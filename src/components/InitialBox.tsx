@@ -15,11 +15,11 @@ export function InitialBox() {
             </h2>
             <div className="flex gap-[10px] flex-col">
               <h1 className="font-[800] mt-[30px]">About me</h1>
-              <p className="font-[600] z-20">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                quia beatae repellat sunt modi aliquid quam ab quo laboriosam,
-                exercitationem distinctio nulla dolorum dolorem! Neque
-                exercitationem eligendi dolores nostrum suscipit.
+              <p className="font-[500] z-20 text-justify">
+                I am a web developer focused on frontend, I also have knowledge in
+                backend. I love technology and study continuously, always looking to
+                learn what's new. I have a degree in Arts and Design from UFJF and I have a degree
+                in Cinema and Audiovisual from the same institution.
               </p>
               <div className="flex w-fit gap-5 mt-[30px] z-20">
                 <button className="bg-black text-white px-[30px] py-[10px] font-[500] rounded-[3px]">
