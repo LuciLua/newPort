@@ -1,7 +1,27 @@
+'use client'
+
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { BiMailSend } from "react-icons/bi"
+import { useRef } from "react";
 
 export function InitialBox() {
+
+
+  const mailToRef = useRef(null)
+
+
+  function mailToCopyToClipboard() {
+    // Use the Clipboard API for modern browsers
+    navigator.clipboard.writeText("luci.lua81@gmail.com")
+      .then(() => {
+        console.log('E-mail copied to clipboard successfully (luci.lua81@gmail.com)');
+      })
+      .catch((error) => {
+        console.error('Unable to copy text to clipboard', error);
+      });
+  }
+
+
   return (
     <div className="bg-white border-[#000] border-[3px] max-w-[1300px] w-full h-fit min-h-[300px] flex flex-col ">
       <div className="flex xl:flex-row flex-col h-full w-full relative  shadow-[-12px_0_12px_inset] shadow-[#00000014]">
@@ -43,9 +63,15 @@ export function InitialBox() {
         </div>
 
         <div className="z-20 relative xl:absolute flex flex-row xl:flex-col gap-[20px] w-full h-full xl:w-[60px] xl:h-[calc(100%+80px)] xl:top-[-10px]  bg-white xl:border-x-[3px] border-y-[3px] xl:border-x-[#000]  xl:border-y-0 border-y-[#000] xl:right-[15px]  xl:pt-[20px] xl:justify-start justify-center items-center py-3 border-b-0">
-          <AiFillLinkedin className="text-[36px] w-fit h-fit " />
-          <AiFillGithub className="text-[36px] w-fit h-fit" />
-          <BiMailSend className="text-[36px] w-fit h-fit" />
+          <a className="cursor-pointer hover:scale-105 transition-[0.3s]" href="https://www.linkedin.com/in/lucia-guelber/" target="_blank">
+            <AiFillLinkedin className="text-[36px] w-fit h-fit " />
+          </a>
+          <a className="cursor-pointer hover:scale-105 transition-[0.3s]" href="https://github.com/lucilua/" target="_blank">
+            <AiFillGithub className="text-[36px] w-fit h-fit" />
+          </a>
+          <div className="cursor-pointer hover:scale-105 transition-[0.3s]" ref={mailToRef} onClick={mailToCopyToClipboard} >
+            <BiMailSend className="text-[36px] w-fit h-fit" />
+          </div>
         </div>
       </div>
 
