@@ -9,6 +9,7 @@ const montserrat = Montserrat({
 })
 
 export default function root_layout({ children }) {
+
   return (
     <html lang="en">
       <head>
@@ -22,6 +23,6 @@ export default function root_layout({ children }) {
           {children}
         </Providers>
       </body>
-    </html>
+    </html> 
   )
 }

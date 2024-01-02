@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
 export function Projeto({ name, img, url, stack }) {
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: false })
 
   const rotated = `${[
@@ -18,7 +18,7 @@ export function Projeto({ name, img, url, stack }) {
       style={{
         transform: isInView ? "none" : rotated,
         opacity: isInView ? 1 : 0,
-        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
       }}
     >
       <img
@@ -29,7 +29,7 @@ export function Projeto({ name, img, url, stack }) {
       <div className="flex w-full gap-2 h-fit border-y-[1px] border-y-[#ddd] px-[4px] py-[10px] flex-wrap">
         {stack.map((tool) => {
           return (
-            <div className="bg-[#ebebeb] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]">
+            <div key={tool} className="bg-[#ebebeb] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]">
               {tool}
             </div>
           )

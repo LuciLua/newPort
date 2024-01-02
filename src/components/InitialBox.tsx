@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { BiMailSend } from "react-icons/bi"
 import { useRef } from "react";
 import { toast } from "react-toastify"
+import Cookies from "js-cookie"
 
 export function InitialBox() {
 
@@ -16,12 +17,20 @@ export function InitialBox() {
     navigator.clipboard.writeText("luci.lua81@gmail.com")
       .then(() => {
         console.log('Email address copied successfully! (luci.lua81@gmail.com)');
-        toast("Email address copied successfully! (luci.lua81@gmail.com)", {autoClose: 4000, hideProgressBar: true})
+        toast("Email address copied successfully! (luci.lua81@gmail.com)", { autoClose: 4000, hideProgressBar: true })
       })
       .catch((error) => {
         console.error('Unable to copy text to clipboard', error);
       });
   }
+
+  function cookieLanguageSelector() {
+    console.log("cookie tests")
+    console.log(Cookies)
+  }
+
+
+  const mySkills = ["ReactJs", "NextJs", "JavaScript", "SASS", "CSS", "NodeJs", "Tailwindcss", "VueJs", "AngularJs", "Flexbox", "HTML", "Express", "API", "Git", "GitHub", "NPM", "Yarn",]
 
 
   return (
@@ -44,7 +53,7 @@ export function InitialBox() {
                 in Cinema and Audiovisual from the same institution.
               </p>
               <div className="flex w-fit gap-5 mt-[30px] z-20">
-                <button className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]">
+                <button onClick={cookieLanguageSelector} className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]">
                   Talk with me
                 </button>
                 <button className="bg-[#ddd] text-[#262626] px-[30px] py-[10px] font-[500] rounded-[3px]">
@@ -78,57 +87,11 @@ export function InitialBox() {
       </div>
 
       <footer className="gap-[30px] flex border-[#262626] border-t-[3px] mt-auto w-full p-2 overflow-x-hidden">
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          NextJS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          ReactJS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          Javascript
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          SASS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          CSS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          NodeJS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          TailwindCSS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          VueJS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          AngularJS
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          Flexbox
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          HTML
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          Express
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          API
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          Git
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          GitHub
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          NPM
-        </div>
-        <div className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-          Yarn
-        </div>
+        {mySkills.map(skill => {
+          return <div key={skill} className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
+            {skill}
+          </div>
+        })}
       </footer>
     </div>
   )
