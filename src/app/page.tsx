@@ -12,8 +12,8 @@ export default function homepage() {
         <InitialBox />
       </div>
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
-        <h1 className="text-[35px] font-[700] ">Projetos</h1>
-        <h2>Alguns projetos em destaque</h2>
+        <h1 className="text-[35px] font-[700] ">Projects</h1>
+        <h2>Some highlighted projects</h2>
         <div className="my-[40px] flex w-full justify-center gap-12 flex-wrap transform perspective-3d">
           <Projeto
             key={"hidrofobia"}
@@ -76,7 +76,7 @@ export default function homepage() {
         </div>
       </div>
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
-        <h1 className="text-[35px] font-[700] pb-[20px]">Educação</h1>
+        <h1 className="text-[35px] font-[700] pb-[20px]">Education</h1>
         <div className="flex w-full justify-center gap-5 flex-wrap p-[20px]">
 
           <EducationBox titleCourse="Curso Web Moderno Completo - Udemy" timeConclusion="97 hours" dateConclusion="2021-2023" courseDescription="In this course, I learned about Javascript, Web Concepts, HTML and CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, Database (relational and NoSQL) and Express." credential credentialLink="https://www.udemy.com/certificate/UC-495b9d41-0005-46b2-9530-dae148592fa8/" credentialLabel="Credentials" />
