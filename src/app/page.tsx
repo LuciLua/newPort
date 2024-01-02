@@ -6,7 +6,7 @@ import { AiOutlineArrowRight, AiOutlineClockCircle, AiOutlineEye } from "react-i
 export default function homepage() {
   return (
     <div className="flex w-full h-full justify-center max-w-[100vw] overflow-x-hidden  flex-col ">
-      <div className="flex w-full max-w-[1300px] h-fit xl:max-h-fit xl:min-h-[800px] xl:h-fit px-[10px] pt-[120px]  items-center pb-[40px] mx-auto">
+      <div className="flex w-full max-w-[1300px] h-fit xl:max-h-fit xl:min-h-[900px] xl:h-fit px-[10px] pt-[120px]  items-center pb-[40px] mx-auto">
         <InitialBox />
       </div>
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
@@ -89,7 +89,7 @@ export default function homepage() {
             <a href="https://www.udemy.com/certificate/UC-495b9d41-0005-46b2-9530-dae148592fa8/" target="_blank" className="self-start py-[10px] font-[400] text-[14px] underline text-[#858585]">credentials</a>
           </div>
 
-          <div className="opacity-90 bg-[#fafafa] border-[1px] border-[#ddd] mr-auto flex flex-col p-4 justify-between max-w-[600px] w-full rounded-[4px]">
+          <div className="opacity-90 bg-[#fafafa] border-[1px] border-[#ddd] flex flex-col p-4 justify-between  w-full rounded-[4px] xl:max-w-[600px] max-w-full">
             <div className="flex flex-col w-full">
               <div className="flex justify-between">
                 <h1 className="font-[600] text-[16px] text-[#121212]">Bacharelado Interdisciplinar em
@@ -108,7 +108,7 @@ export default function homepage() {
             <a href="/docs/arts.pdf" target="_blank" className="self-start py-[10px] font-[400] text-[14px] underline text-[#858585]">University Degree</a>
           </div>
 
-          <div className="opacity-90 bg-[#fafafa] border-[1px] border-[#ddd] mr-auto flex flex-col p-4 justify-between max-w-[600px] w-full rounded-[4px]">
+          <div className="opacity-90 bg-[#fafafa] border-[1px] border-[#ddd] flex flex-col p-4 justify-between xl:max-w-[600px] max-w-full w-full rounded-[4px] ">
             <div className="flex flex-col w-full">
               <div className="flex justify-between">
                 <h1 className="font-[600] text-[16px] text-[#121212]">Bacharelado em Cinema e
@@ -127,7 +127,7 @@ export default function homepage() {
             {/* <a href="/docs/cinema.pdf" target="_blank" className="self-start py-[10px] font-[400] text-[14px] underline text-[#858585]">University Degree</a> */}
           </div>
 
-          <div className="flex gap-5 justify-center py-5 items-center">
+          <div className="flex gap-5 justify-center py-5 items-center w-full">
             <button className="bg-[#121212] text-white px-4 py-1 rounded-[30px]">Download CV</button>
             <button className="border-b-[1px] border-b-[#121212] flex gap-1 justify-center items-center h-fit"><AiOutlineEye className="font-[12px]"/> View CV</button>
           </div>
