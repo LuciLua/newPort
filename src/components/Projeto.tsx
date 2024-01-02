@@ -46,6 +46,7 @@ export function Projeto({ name, img, url, stack }) {
         <a
           className="bg-black text-white px-5 py-1 h-fit rounded-[3px]"
           href={url}
+          target="_blank"
         >
           Acessar
         </a>

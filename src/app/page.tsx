@@ -16,13 +16,13 @@ export default function homepage() {
           <Projeto
             name={"Hidrofobia"}
             img={"/assets/projects/hidrofobia.png"}
-            url={"https://www.curtahidrofobia.com/"}
+            url={"https://curtahidrofobia.com/"}
             stack={["reactJS", "nextJS", "tailwindcss"]}
           />
           <Projeto
             name={"Somuuh"}
             img={"/assets/projects/somuuh.png"}
-            url={"https://www.somuuh.vercel.app/"}
+            url={"https://somuuh.vercel.app/"}
             stack={[
               "reactJS",
               "nextJS",

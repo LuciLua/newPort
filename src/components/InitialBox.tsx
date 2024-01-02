@@ -3,6 +3,7 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { BiMailSend } from "react-icons/bi"
 import { useRef } from "react";
+import { toast } from "react-toastify"
 
 export function InitialBox() {
 
@@ -14,7 +15,8 @@ export function InitialBox() {
     // Use the Clipboard API for modern browsers
     navigator.clipboard.writeText("luci.lua81@gmail.com")
       .then(() => {
-        console.log('E-mail copied to clipboard successfully (luci.lua81@gmail.com)');
+        console.log('Email address copied successfully! (luci.lua81@gmail.com)');
+        toast("Email address copied successfully! (luci.lua81@gmail.com)", {autoClose: 4000, hideProgressBar: true})
       })
       .catch((error) => {
         console.error('Unable to copy text to clipboard', error);
