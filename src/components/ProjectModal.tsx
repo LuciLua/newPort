@@ -2,6 +2,7 @@
 import { useProjectModal } from "../hooks/useProjectModal"
 import { AiFillCloseCircle } from "react-icons/ai"
 import { motion } from "framer-motion"
+import { MoreText } from "./MoreText"
 
 export function ProjectModal() {
     const { toggleModalOpen, modalOpen, modalContent } = useProjectModal()
@@ -17,7 +18,7 @@ export function ProjectModal() {
                         style={{
                             transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1)",
                         }}
-                        className="w-full max-w-[700px] h-fit min-h-[200px] relative flex flex-col bg-[#fff] p-4 rounded-[4px] shadow-[rgb(222,222,222)] shadow-[0px_0px_12px]"
+                        className="w-full max-w-[700px] h-fit min-h-[200px] max-h-[calc(100dvh-100px)] relative flex flex-col bg-[#fff] p-4 rounded-[4px] shadow-[rgb(222,222,222)] shadow-[0px_0px_12px]"
                     >
                         <button
                             onClick={toggleModalOpen}
@@ -39,7 +40,9 @@ export function ProjectModal() {
                             })}
                         </div>
                         <div className="custom-scrollbar overflow-y-scroll overflow-x-hidden scroll-py-[1px]">
-                            <p className="py-4">{description}</p>
+                            <MoreText style="py-2">
+                                {description}
+                            </MoreText>
                             <img src={img} alt="Project Image" className="py-4" />
                         </div>
                         <a
