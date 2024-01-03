@@ -28,7 +28,7 @@ export function InitialBox() {
         console.error("Unable to copy text to clipboard", error)
       })
   }
-  
+
   const mySkills = [
     "ReactJs",
     "NextJs",
@@ -51,7 +51,7 @@ export function InitialBox() {
 
   return (
     <div className="bg-white border-[#262626] border-[3px] max-w-[1300px] w-full h-fit min-h-[300px] flex flex-col ">
-      <div className="flex xl:flex-row flex-col h-full w-full relative  shadow-[-12px_0_12px_inset] shadow-[#00000014]">
+      <div className="flex xl:flex-row flex-col xl:max-h-[508px] xl:h-[508px] w-full relative  shadow-[-12px_0_12px_inset] shadow-[#00000014]">
         <div className="xl:border-r-[3px] xl:border-r-[#262626] w-full h-full  items-center flex flex-col">
           <div className="xl:py-[70px] py-[20px] xl:max-w-[500px] max-w-[700px] px-[10px]">
             <h1 className=" leading-none xl:text-[70px] text-[50px] font-black self-start text-[#262626]">
