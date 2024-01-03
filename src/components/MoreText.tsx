@@ -1,11 +1,15 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TfiMoreAlt } from "react-icons/tfi";
 
 export function MoreText({ children, numOfLines = 2, style }: { children: React.ReactNode, numOfLines?: number, style?: string}) {
 
-    const [num, setNum] = useState(numOfLines)
+    const [num, setNum] = useState(2)
+
+    // useEffect(() => {
+    //     setNum(numOfLines)
+    // }, [num])
 
     function moreText() {
         setNum(999)
@@ -13,7 +17,7 @@ export function MoreText({ children, numOfLines = 2, style }: { children: React.
 
     return (
         <div className={`${style}`}>
-            <p className={`line-clamp-${num} overflow-hidden font-[500] z-20 text-justify`}>{children}</p>
+            <p className={`line-clamp-[${num}] overflow-hidden font-[500] z-20 text-justify`}>{children}</p>
             {num > 2 ?
                 null
                 :
