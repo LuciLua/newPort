@@ -21,6 +21,7 @@ export default function homepage() {
             img={"/assets/projects/hidrofobia.png"}
             url={"https://curtahidrofobia.com/"}
             stack={["reactJS", "nextJS", "tailwindcss"]}
+            description="Hidrofobia is a website developed with the purpose of promoting the film that I produced and directed. Not just publicizing, but being a means of raising funds for the film's production through a personalized and exclusive form integrated with Google Forms. In this project there is also a gallery of behind-the-scenes photos from the recording days."
           />
           <Projeto
             key={"Somuuh"}
@@ -34,6 +35,7 @@ export default function homepage() {
               "next-auth",
               "typescript",
             ]}
+            description="Somuuh is a social network project focused on working with authentication and design. Exploring references such as Instagram, Twitter and Spotify."
           />
           <Projeto
             key={"Notein"}
@@ -48,6 +50,7 @@ export default function homepage() {
               "typescript",
               "axios",
             ]}
+            description="NoteIn is a project in which I focused on working with authentication with a non-real database (mongoDB)"
           />
           <Projeto
             key={"Pokedex"}
@@ -55,6 +58,7 @@ export default function homepage() {
             img={"/assets/projects/pokedex.png"}
             url={"https://pokedeex.vercel.app/"}
             stack={["reactJS", "nextJS", "sass"]}
+            description="Pokedex is a project that aims to bring together all the pokemons in one place, with their information, such as abilities (in bars) and images"
           />
           <Projeto
             key={"ToDo"}
@@ -62,6 +66,7 @@ export default function homepage() {
             img={"/assets/projects/todo.png"}
             url={"https://todo-lucilua.vercel.app/"}
             stack={["reactJS", "nextJS", "sass", "typescript", "localStorage"]}
+            description="ToDo is a web application that seeks to store items defined by the user in the browser, mark them as completed or even remove them. React, Next.js, LocalStorage, Typescript and SASS were used."
           />
           <Projeto
             key={"Compare"}
@@ -69,6 +74,7 @@ export default function homepage() {
             img={"/assets/projects/compare.png"}
             url={"https://compare-orpin.vercel.app/"}
             stack={["reactJS", "nextJS", "sass", "typescript", "axios"]}
+            description="Compare is an application that compares a list of followers of a user on github with the list of people that this user follows, generating two other lists: that of users that the current user follows but does not follow him back, and that of users that the current user does not follow but follow him. Generating a link for each user profile in these two lists, allowing you to follow or unfollow users."
           />
         </div>
         <div className="w-full flex justify-center items-center border-b-[1px] max-w-[1150px] mx-auto pb-[20px]">

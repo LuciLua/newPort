@@ -2,6 +2,7 @@ import { Montserrat } from "next/font/google"
 import "../styles/globals.css"
 import { Providers } from "../components/Providers"
 import { Menu } from "../components/Menu/Menu"
+import { ProjectModal } from "../components/ProjectModal"
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -21,8 +22,9 @@ export default function root_layout({ children }) {
         <Providers>
           <Menu />
           {children}
+          <ProjectModal />
         </Providers>
       </body>
-    </html> 
+    </html>
   )
 }

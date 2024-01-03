@@ -16,3 +16,17 @@ body {
   min-height: 100svh;
   width: 100%;
 }
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    /* background-color: rgb(235, 235, 235); */
+    border-radius: 30px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: rgb(205, 205, 205);
+    border-radius: 30px;
+  }
+}
