@@ -3,25 +3,28 @@
 import { useEffect, useState } from "react";
 import { TfiMoreAlt } from "react-icons/tfi";
 
-export function MoreText({ children, numOfLines = 2, style }: { children: React.ReactNode, numOfLines?: number, style?: string}) {
+export function MoreText({ children, numOfLines, style }: { children: React.ReactNode, numOfLines?: number, style?: string}) {
 
     const [num, setNum] = useState(2)
 
     // useEffect(() => {
-    //     setNum(numOfLines)
     // }, [num])
 
     function moreText() {
         setNum(999)
     }
+    console.log(num)
 
     return (
         <div className={`${style}`}>
-            <p className={`line-clamp-[${num}] overflow-hidden font-[500] z-20 text-justify`}>{children}</p>
-            {num > 2 ?
-                null
+           
+            {num != 2 ?
+                <p className={`line-clamp-[10] overflow-hidden font-[500] z-20 text-justify`}>{children}</p>
                 :
-                <TfiMoreAlt onClick={() => moreText()} className="bg-[#ddd] rounded-[30px] cursor-pointer w-[40px] h-[20px] text-[#575757] my-2" />
+                <>
+                 <p className={`line-clamp-[4] overflow-hidden font-[500] z-20 text-justify`}>{children}</p>
+                <TfiMoreAlt onClick={moreText} className="bg-[#ddd] rounded-[30px] cursor-pointer w-[40px] h-[20px] text-[#575757] my-2" />
+                </>
             }
         </div>
     )
