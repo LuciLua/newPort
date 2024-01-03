@@ -6,7 +6,6 @@ import { Projeto } from "../components/Projeto"
 import { AiOutlineArrowRight, AiOutlineEye } from "react-icons/ai"
 
 export default function homepage() {
-
   return (
     <div className="flex w-full h-full justify-center max-w-[100vw] overflow-x-hidden  flex-col ">
       <div className="flex w-full max-w-[1300px] h-fit xl:max-h-fit xl:min-h-[900px] xl:h-fit px-[10px] pt-[120px]  items-center pb-[40px] mx-auto">
@@ -116,7 +115,10 @@ export default function homepage() {
           />
 
           <div className="flex gap-5 justify-center py-5 items-center w-full">
-            <a href="/assets/cv/curriculum.pdf" className="bg-[#121212] text-white px-4 py-1 rounded-[30px]">
+            <a
+              href="/assets/cv/curriculum.pdf"
+              className="bg-[#121212] text-white px-4 py-1 rounded-[30px]"
+            >
               Download CV
             </a>
             <ViewCV />
