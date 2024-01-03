@@ -2,11 +2,11 @@
 
 import { motion, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
-import { useProjectModal } from "../hooks/useProjectModal";
-import { ProjectModal } from "./ProjectModal";
+import { useProjectModal } from "../hooks/useProjectModal"
+import { ProjectModal } from "./ProjectModal"
 
 export function Projeto({ name, img, url, stack, description }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: false })
 
   const rotated = `${[
@@ -34,7 +34,10 @@ export function Projeto({ name, img, url, stack, description }) {
         <div className="flex w-full gap-2 h-fit border-y-[1px] border-y-[#ddd] px-[4px] py-[10px] flex-wrap">
           {stack.map((tool) => {
             return (
-              <div key={tool} className="bg-[#ebebeb] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]">
+              <div
+                key={tool}
+                className="bg-[#ebebeb] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]"
+              >
                 {tool}
               </div>
             )
@@ -44,7 +47,10 @@ export function Projeto({ name, img, url, stack, description }) {
           <h1 className="text-black text-[20px] font-[700] ">{name}</h1>
           <button
             className=" text-black underline px-5 py-1 h-fit rounded-[3px]"
-            onClick={() => { toggleModalOpen(), setModalContent({ name, img, url, stack, description }) }}
+            onClick={() => {
+              toggleModalOpen(),
+                setModalContent({ name, img, url, stack, description })
+            }}
           >
             Sobre
           </button>

@@ -10,7 +10,6 @@ const montserrat = Montserrat({
 })
 
 export default function root_layout({ children }) {
-
   return (
     <html lang="en">
       <head>

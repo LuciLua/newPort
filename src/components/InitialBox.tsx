@@ -1,27 +1,28 @@
-'use client'
+"use client"
 
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { BiMailSend } from "react-icons/bi"
-import { useRef } from "react";
+import { useRef } from "react"
 import { toast } from "react-toastify"
 import Cookies from "js-cookie"
 
 export function InitialBox() {
-
-
   const mailToRef = useRef(null)
-
 
   function mailToCopyToClipboard() {
     // Use the Clipboard API for modern browsers
-    navigator.clipboard.writeText("luci.lua81@gmail.com")
+    navigator.clipboard
+      .writeText("luci.lua81@gmail.com")
       .then(() => {
-        console.log('Email address copied successfully! (luci.lua81@gmail.com)');
-        toast("Email address copied successfully! (luci.lua81@gmail.com)", { autoClose: 4000, hideProgressBar: true })
+        console.log("Email address copied successfully! (luci.lua81@gmail.com)")
+        toast("Email address copied successfully! (luci.lua81@gmail.com)", {
+          autoClose: 4000,
+          hideProgressBar: true,
+        })
       })
       .catch((error) => {
-        console.error('Unable to copy text to clipboard', error);
-      });
+        console.error("Unable to copy text to clipboard", error)
+      })
   }
 
   function cookieLanguageSelector() {
@@ -29,9 +30,25 @@ export function InitialBox() {
     console.log(Cookies)
   }
 
-
-  const mySkills = ["ReactJs", "NextJs", "JavaScript", "SASS", "CSS", "NodeJs", "Tailwindcss", "VueJs", "AngularJs", "Flexbox", "HTML", "Express", "API", "Git", "GitHub", "NPM", "Yarn",]
-
+  const mySkills = [
+    "ReactJs",
+    "NextJs",
+    "JavaScript",
+    "SASS",
+    "CSS",
+    "NodeJs",
+    "Tailwindcss",
+    "VueJs",
+    "AngularJs",
+    "Flexbox",
+    "HTML",
+    "Express",
+    "API",
+    "Git",
+    "GitHub",
+    "NPM",
+    "Yarn",
+  ]
 
   return (
     <div className="bg-white border-[#262626] border-[3px] max-w-[1300px] w-full h-fit min-h-[300px] flex flex-col ">
@@ -47,13 +64,17 @@ export function InitialBox() {
             <div className="flex gap-[10px] flex-col">
               <h1 className="font-[800] text-[#1b1b1b] mt-[30px]">About me</h1>
               <p className="font-[500] z-20 text-justify">
-                I am a web developer focused on frontend, I also have knowledge in
-                backend. I love technology and study continuously, always looking to
-                learn what's new. I have a degree in Arts and Design from UFJF and I have a degree
-                in Cinema and Audiovisual from the same institution.
+                I am a web developer focused on frontend, I also have knowledge
+                in backend. I love technology and study continuously, always
+                looking to learn what's new. I have a degree in Arts and Design
+                from UFJF and I have a degree in Cinema and Audiovisual from the
+                same institution.
               </p>
               <div className="flex w-fit gap-5 mt-[30px] z-20">
-                <button onClick={cookieLanguageSelector} className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]">
+                <button
+                  onClick={cookieLanguageSelector}
+                  className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]"
+                >
                   Talk with me
                 </button>
                 <button className="bg-[#ddd] text-[#262626] px-[30px] py-[10px] font-[500] rounded-[3px]">
@@ -74,23 +95,40 @@ export function InitialBox() {
         </div>
 
         <div className="z-20 relative xl:absolute flex flex-row xl:flex-col gap-[20px] w-full h-full xl:w-[60px] xl:h-[calc(100%+80px)] xl:top-[-10px]  bg-white xl:border-x-[3px] border-y-[3px] xl:border-x-[#262626]  xl:border-y-0 border-y-[#262626] xl:right-[15px]  xl:pt-[20px] xl:justify-start justify-center items-center py-3 border-b-0">
-          <a className="cursor-pointer hover:scale-105 transition-[0.3s]" href="https://www.linkedin.com/in/lucia-guelber/" target="_blank">
+          <a
+            className="cursor-pointer hover:scale-105 transition-[0.3s]"
+            href="https://www.linkedin.com/in/lucia-guelber/"
+            target="_blank"
+          >
             <AiFillLinkedin className=" text-[#262626] text-[36px] w-fit h-fit " />
           </a>
-          <a className="cursor-pointer hover:scale-105 transition-[0.3s]" href="https://github.com/lucilua/" target="_blank">
+          <a
+            className="cursor-pointer hover:scale-105 transition-[0.3s]"
+            href="https://github.com/lucilua/"
+            target="_blank"
+          >
             <AiFillGithub className=" text-[#262626] text-[36px] w-fit h-fit" />
           </a>
-          <div className="cursor-pointer hover:scale-105 transition-[0.3s]" ref={mailToRef} onClick={mailToCopyToClipboard} >
+          <div
+            className="cursor-pointer hover:scale-105 transition-[0.3s]"
+            ref={mailToRef}
+            onClick={mailToCopyToClipboard}
+          >
             <BiMailSend className=" text-[#262626] text-[36px] w-fit h-fit" />
           </div>
         </div>
       </div>
 
       <footer className="gap-[30px] flex border-[#262626] border-t-[3px] mt-auto w-full p-2 overflow-x-hidden">
-        {mySkills.map(skill => {
-          return <div key={skill} className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]">
-            {skill}
-          </div>
+        {mySkills.map((skill) => {
+          return (
+            <div
+              key={skill}
+              className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]"
+            >
+              {skill}
+            </div>
+          )
         })}
       </footer>
     </div>

@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { createContext } from "react"
 // import en from "../../../public/disctionaries/en"
@@ -6,11 +6,10 @@ import { createContext } from "react"
 
 export const LocaleContext = createContext(null)
 
-export function LocaleContextProvider({ children }: { children: React.ReactNode }) {
-
-    return (
-        <LocaleContext.Provider value={{ }}>
-            {children}
-        </LocaleContext.Provider>
-    )
+export function LocaleContextProvider({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return <LocaleContext.Provider value={{}}>{children}</LocaleContext.Provider>
 }

@@ -4,9 +4,7 @@ export function Menu() {
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <li className="flex flex-col h-full justify-center leading-[20px]">
           <h1 className="text-[27px] font-black text-[#262626]">LUCILUA</h1>
-          <h2 className="text-[15px] font-medium">
-            Frontend Developer
-          </h2>
+          <h2 className="text-[15px] font-medium">Frontend Developer</h2>
         </li>
         <li>
           <ul className="list-none gap-10 flex items-center w-fit h-full font-[700]">
