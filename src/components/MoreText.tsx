@@ -24,7 +24,7 @@ export function MoreText({
 
   return (
     <div className={`${style}`}>
-      {num != 2 ? (
+      {num > 2 ? (
         <p
           className={`line-clamp-[10] overflow-hidden font-[500] z-20 text-justify`}
         >
@@ -32,7 +32,7 @@ export function MoreText({
         </p>
       ) : (
         <div className="flex flex-col">
-          <p className={`line-clamp-[${numOfLines}] overflow-hidden font-[500] z-20 text-justify`}>
+          <p className={`line-clamp-2 overflow-hidden font-[500] z-20 text-justify`}>
             {children}
           </p>
           <TfiMoreAlt onClick={moreText} className="bg-[#e9e9e9] rounded-[30px] cursor-pointer w-[40px] h-[20px] text-[#939393] my-2"/>
