@@ -40,9 +40,9 @@ export function ProjectModal() {
                             })}
                         </div>
                         <div className="custom-scrollbar overflow-y-scroll overflow-x-hidden scroll-py-[1px]">
-                            <MoreText style="py-3 px-4 z-20">
+                            <p className="p-4">
                                 {description}
-                            </MoreText>
+                            </p>
                             <img src={img} alt="Project Image" className="py-4" />
                         </div>
                         <a
