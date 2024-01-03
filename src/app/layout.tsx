@@ -3,6 +3,7 @@ import "../styles/globals.css"
 import { Providers } from "../components/Providers"
 import { Menu } from "../components/Menu/Menu"
 import { ProjectModal } from "../components/ProjectModal"
+import { CurriculumModal } from "../components/CurriculumModal"
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -22,6 +23,7 @@ export default function root_layout({ children }) {
           <Menu />
           {children}
           <ProjectModal />
+          <CurriculumModal />
         </Providers>
       </body>
     </html>

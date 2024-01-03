@@ -1,9 +1,12 @@
+import { ViewCV } from "../components/Btns/ViewCV"
+import { CurriculumModal } from "../components/CurriculumModal"
 import { EducationBox } from "../components/EducationBox"
 import { InitialBox } from "../components/InitialBox"
 import { Projeto } from "../components/Projeto"
 import { AiOutlineArrowRight, AiOutlineEye } from "react-icons/ai"
 
 export default function homepage() {
+
   return (
     <div className="flex w-full h-full justify-center max-w-[100vw] overflow-x-hidden  flex-col ">
       <div className="flex w-full max-w-[1300px] h-fit xl:max-h-fit xl:min-h-[900px] xl:h-fit px-[10px] pt-[120px]  items-center pb-[40px] mx-auto">
@@ -113,12 +116,11 @@ export default function homepage() {
           />
 
           <div className="flex gap-5 justify-center py-5 items-center w-full">
-            <button className="bg-[#121212] text-white px-4 py-1 rounded-[30px]">
+            <a href="/assets/cv/curriculum.pdf" className="bg-[#121212] text-white px-4 py-1 rounded-[30px]">
               Download CV
-            </button>
-            <button className="border-b-[1px] border-b-[#121212] flex gap-1 justify-center items-center h-fit">
-              <AiOutlineEye className="font-[12px]" /> View CV
-            </button>
+            </a>
+            <ViewCV />
+            <CurriculumModal />
           </div>
         </div>
       </div>
