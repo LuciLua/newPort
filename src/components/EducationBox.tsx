@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import { AiOutlineClockCircle } from "react-icons/ai"
+import { MoreText } from "./MoreText"
 
 type EducationBoxProps = {
   titleCourse: string
@@ -12,6 +13,7 @@ type EducationBoxProps = {
   credentialLink?: string
   credentialLabel?: string
   style?: string
+  moreText?: boolean
 }
 
 export function EducationBox({
@@ -23,6 +25,7 @@ export function EducationBox({
   credential,
   credentialLabel,
   style,
+  moreText
 }: EducationBoxProps) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -39,7 +42,7 @@ export function EducationBox({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className={`${style} bg-[#fafafa] border-[1px] border-[#ddd] shadow-lg mr-auto flex flex-col p-4 justify-between w-full rounded-[4px]`}
+      className={`${style} bg-[#fafafa] border-[1px] border-[#ddd] shadow-lg mr-auto flex flex-col p-4 justify-between w-full rounded-[4px] h-fit`}
     >
       <div className="flex flex-col w-full">
         <div className="flex justify-between">
@@ -56,7 +59,15 @@ export function EducationBox({
         </h2>
       </div>
       <div className="w-full mt-[10px] text-[15px] text-[#454545]">
-        <p>{courseDescription}</p>
+        {moreText ?
+          <MoreText numOfLines={2}>
+            {courseDescription}
+          </MoreText>
+          :
+          <p>
+            {courseDescription}
+          </p>
+        }
       </div>
       {credential && (
         <a

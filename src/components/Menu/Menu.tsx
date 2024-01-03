@@ -1,10 +1,10 @@
 export function Menu() {
   return (
-    <div className="w-full h-[120px] bg-[#ffffffe7] backdrop-blur-[12px] flex justify-center fixed top-0 z-40">
+    <div className="w-full h-[70px] bg-[#ffffffe7] backdrop-blur-[12px] flex justify-center fixed top-0 z-40">
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <li className="flex flex-col h-full justify-center leading-[20px]">
-          <h1 className="text-[27px] font-black text-[#262626]">LUCILUA</h1>
-          <h2 className="text-[15px] font-medium">Frontend Developer</h2>
+          <h1 className="text-[27px] font-black text-[#262626]">Luci Lua /{">"}</h1>
+          <a href="#" className="text-[16px] font-medium">Frontend Developer</a>
         </li>
         <li>
           <ul className="list-none gap-10 flex items-center w-fit h-full font-[700]">

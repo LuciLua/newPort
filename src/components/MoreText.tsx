@@ -31,17 +31,12 @@ export function MoreText({
           {children}
         </p>
       ) : (
-        <>
-          <p
-            className={`line-clamp-[4] overflow-hidden font-[500] z-20 text-justify`}
-          >
+        <div className="flex flex-col">
+          <p className={`line-clamp-[${numOfLines}] overflow-hidden font-[500] z-20 text-justify`}>
             {children}
           </p>
-          <TfiMoreAlt
-            onClick={moreText}
-            className="bg-[#ddd] rounded-[30px] cursor-pointer w-[40px] h-[20px] text-[#575757] my-2"
-          />
-        </>
+          <TfiMoreAlt onClick={moreText} className="bg-[#e9e9e9] rounded-[30px] cursor-pointer w-[40px] h-[20px] text-[#939393] my-2"/>
+        </div>
       )}
     </div>
   )

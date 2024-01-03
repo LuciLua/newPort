@@ -105,6 +105,7 @@ export default function homepage() {
             credential
             credentialLink="/docs/arts.pdf"
             credentialLabel="University Degree"
+            moreText
           />
           <EducationBox
             style="opacity-90 xl:max-w-[600px]"
@@ -112,6 +113,7 @@ export default function homepage() {
             timeConclusion="2 years"
             dateConclusion="2022-2024"
             courseDescription="As a Cinema and Audiovisual student I have knowledge about screenwriting, montage and editing (of videos/films), film theory, among others. I have already produced some audiovisual content and films."
+            moreText
           />
 
           <div className="flex gap-5 justify-center py-5 items-center w-full">
