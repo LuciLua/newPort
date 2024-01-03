@@ -1,0 +1,10 @@
+{
+    "initial_box": {
+        "h1": "LuciLua",
+        "h2": "Frontend Developer",
+        "about_me": "About me",
+        "p": "I am a web developer focused on frontend, I also have knowledge in backend. I love technology and study continuously, always looking to learn what's new. I have a degree in Arts and Design from UFJF and I have a degree in Cinema and Audiovisual from the same institution.",
+        "primary_btn": "Talk with me",
+        "secondary_btn": "Know more"
+    }
+}

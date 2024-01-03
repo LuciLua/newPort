@@ -1,8 +1,8 @@
-import { ViewCV } from "../components/Btns/ViewCV"
-import { CurriculumModal } from "../components/CurriculumModal"
-import { EducationBox } from "../components/EducationBox"
-import { InitialBox } from "../components/InitialBox"
-import { Projeto } from "../components/Projeto"
+import { ViewCV } from "../../components/Btns/ViewCV"
+import { CurriculumModal } from "../../components/CurriculumModal"
+import { EducationBox } from "../../components/EducationBox"
+import { InitialBox } from "../../components/InitialBox"
+import { Projeto } from "../../components/Projeto"
 import { AiOutlineArrowRight, AiOutlineEye } from "react-icons/ai"
 
 export default function homepage() {

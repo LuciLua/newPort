@@ -1,0 +1,10 @@
+{
+    "initial_box": {
+        "h1": "LuciLua",
+        "h2": "Développeur frontal",
+        "about_me": "sur moi",
+        "p": "Je suis un développeur web axé sur le frontend, j'ai également des connaissances en backend. J'aime la technologie et j'étudie continuellement, cherchant toujours à apprendre les nouveautés. Je suis diplômée en Arts et Design de l'UFJF et j'ai une licence en Cinéma et Audiovisuel de la même institution.",
+        "primary_btn": "Parle moi",
+        "secondary_btn": "Trouve-le"
+    }
+}

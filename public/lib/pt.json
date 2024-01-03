@@ -1,0 +1,10 @@
+{
+    "initial_box": {
+        "h1": "LuciLua",
+        "h2": "Desenvolvedora front-end",
+        "about_me": "Sobre mim",
+        "p": "Sou uma desenvolvedora web focada em frontend, também tenho conhecimento em backend. Adoro tecnologia e estudo continuamente, buscando sempre aprender novidades. Sou formada em Artes e Design pela UFJF e possuo graduação em Cinema e Audiovisual pela mesma instituição.",
+        "primary_btn": "Fale comigo",
+        "secondary_btn": "Conheça mais"
+    }
+}

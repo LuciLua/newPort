@@ -8,18 +8,25 @@ import {
   CurriculumModalContext,
   CurriculumModalContextProvider,
 } from "../contexts/CurriculumModalContext"
+import { NextIntlClientProvider } from "next-intl"
+import { TranslationContextProvider } from "../contexts/TranslationContext"
 
-export function Providers({ children }) {
+import { dictionaries } from "../dictionaries/dictionaries"
+
+export function Providers({ children, params }) {
+  const dic = dictionaries()
   return (
     <>
-      <LocaleContextProvider>
-        <ProjectModalContextProvider>
-          <CurriculumModalContextProvider>
-            {children}
-            <ToastContainer className={"z-40"} />
-          </CurriculumModalContextProvider>
-        </ProjectModalContextProvider>
-      </LocaleContextProvider>
+      <NextIntlClientProvider locale="pt" messages={dic}>
+        <TranslationContextProvider params={params}>
+          <ProjectModalContextProvider>
+            <CurriculumModalContextProvider>
+              {children}
+              <ToastContainer className={"z-40"} />
+            </CurriculumModalContextProvider>
+          </ProjectModalContextProvider>
+        </TranslationContextProvider>
+      </NextIntlClientProvider>
     </>
   )
 }

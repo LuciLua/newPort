@@ -6,9 +6,12 @@ import { useRef } from "react"
 import { toast } from "react-toastify"
 import Cookies from "js-cookie"
 import { MoreText } from "./MoreText"
+import { useTranslation } from "../hooks/useTranslation"
 
 export function InitialBox() {
   const mailToRef = useRef(null)
+
+  const { translations, lang, currentPathname } = useTranslation()
 
   function mailToCopyToClipboard() {
     // Use the Clipboard API for modern browsers
@@ -25,12 +28,7 @@ export function InitialBox() {
         console.error("Unable to copy text to clipboard", error)
       })
   }
-
-  function cookieLanguageSelector() {
-    console.log("cookie tests")
-    console.log(Cookies)
-  }
-
+  
   const mySkills = [
     "ReactJs",
     "NextJs",
@@ -57,29 +55,24 @@ export function InitialBox() {
         <div className="xl:border-r-[3px] xl:border-r-[#262626] w-full h-full  items-center flex flex-col">
           <div className="xl:py-[70px] py-[20px] xl:max-w-[500px] max-w-[700px] px-[10px]">
             <h1 className=" leading-none xl:text-[70px] text-[50px] font-black self-start text-[#262626]">
-              Luci Lua
+              {translations.initial_box.h1}
             </h1>
             <h2 className=" font-[500] text-[20px] self-start text-[#2c2c2c]">
-              Frontend Developer
+              {translations.initial_box.h2}
             </h2>
             <div className="flex gap-[10px] flex-col">
-              <h1 className="font-[800] text-[#1b1b1b] mt-[30px]">About me</h1>
+              <h1 className="font-[800] text-[#1b1b1b] mt-[30px]">{translations.initial_box.about_me}</h1>
               <p className="font-[500]">
-                I am a web developer focused on frontend, I also have knowledge
-                in backend. I love technology and study continuously, always
-                looking to learn what's new. I have a degree in Arts and Design
-                from UFJF and I have a degree in Cinema and Audiovisual from the
-                same institution.
+                {translations.initial_box.p}
               </p>
               <div className="flex w-fit gap-5 mt-[30px] z-20">
                 <button
-                  onClick={cookieLanguageSelector}
                   className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]"
                 >
-                  Talk with me
+                  {translations.initial_box.primary_btn}
                 </button>
                 <button className="bg-[#ddd] text-[#262626] px-[30px] py-[10px] font-[500] rounded-[3px]">
-                  Know more
+                  {translations.initial_box.secondary_btn}
                 </button>
               </div>
             </div>
