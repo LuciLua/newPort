@@ -5,7 +5,7 @@ import { BiMailSend } from "react-icons/bi"
 import { useRef } from "react"
 import { toast } from "react-toastify"
 import Cookies from "js-cookie"
-import { MoreText } from "./MoreText"
+import { MoreText } from "./Btns/MoreText"
 import { useTranslation } from "../hooks/useTranslation"
 
 export function InitialBox() {

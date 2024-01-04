@@ -1,11 +1,10 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
-import { useEffect, useRef } from "react"
-import { useProjectModal } from "../hooks/useProjectModal"
-import { ProjectModal } from "./ProjectModal"
+import { useRef } from "react"
+import { useModal } from "../hooks/useModal"
 
-export function Projeto({ name, img, url, stack, description }) {
+export function Project({ name, img, url, stack, description }) {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: false })
 
@@ -13,7 +12,7 @@ export function Projeto({ name, img, url, stack, description }) {
     "translate3d(20px, -10px, 5px)" + "rotateY(20deg)" + "rotateX(20deg)",
   ]}`
 
-  const { modalOpen, toggleModalOpen, setModalContent } = useProjectModal()
+  const { toggleModalOpen, setModalContent, setModalType } = useModal()
 
   return (
     <>
@@ -49,6 +48,7 @@ export function Projeto({ name, img, url, stack, description }) {
             className=" text-black underline px-5 py-1 h-fit rounded-[3px]"
             onClick={() => {
               toggleModalOpen(),
+                setModalType("project"),
                 setModalContent({ name, img, url, stack, description })
             }}
           >

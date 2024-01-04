@@ -2,7 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import { AiOutlineClockCircle } from "react-icons/ai"
-import { MoreText } from "./MoreText"
+import { MoreText } from "./Btns/MoreText"
 
 type EducationBoxProps = {
   titleCourse: string

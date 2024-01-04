@@ -2,8 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation"
 
-export function BtnToggleLocale() {
-
+export function BtnToggleLocale({ lang, className, lang_label }: { lang: string, className?: string, lang_label?: string }) {
     const pathname = usePathname()
     const router = useRouter()
 
@@ -14,14 +13,5 @@ export function BtnToggleLocale() {
         router.push(novoPathname)
     }
 
-
-    return (
-        <div className="">
-            <div className="w-fit gap-4 flex ">
-                <button onClick={() => toggleTranslateLanguage("en")} className="bg-neutral-50 text-neutral-600 p-2 rounded-sm border-neutral-100 border-[1px]">EN</button>
-                <button onClick={() => toggleTranslateLanguage("pt")} className="bg-neutral-50 text-neutral-600 p-2 rounded-sm border-neutral-100 border-[1px]">PT</button>
-                <button onClick={() => toggleTranslateLanguage("fr")} className="bg-neutral-50 text-neutral-600 p-2 rounded-sm border-neutral-100 border-[1px]">FR</button>
-            </div>
-        </div>
-    )
+    return (<button onClick={() => toggleTranslateLanguage(lang)} className={`${className}`}>{lang_label ? lang_label : lang}</button>)
 }

@@ -2,13 +2,13 @@ import { ViewCV } from "../../components/Btns/ViewCV"
 import { CurriculumModal } from "../../components/CurriculumModal"
 import { EducationBox } from "../../components/EducationBox"
 import { InitialBox } from "../../components/InitialBox"
-import { Projeto } from "../../components/Projeto"
-import { AiOutlineArrowRight, AiOutlineEye } from "react-icons/ai"
+import { Project } from "../../components/Project"
+import { AiOutlineArrowRight } from "react-icons/ai"
 
 export default function homepage() {
   return (
     <div className="flex w-full h-full justify-center max-w-[100vw] overflow-x-hidden  flex-col ">
-      <div className="flex w-full max-w-[1300px] h-fit xl:max-h-fit xl:min-h-[900px] xl:h-fit px-[10px] pt-[120px]  items-center pb-[40px] mx-auto">
+      <div className="flex w-full max-w-[1300px] h-fit xl:max-h-fit xl:min-h-[900px] xl:h-fit px-[10px] pt-[80px]  items-center pb-[40px] mx-auto">
         {/* <h1 className="font-black text-[30px]">{lang}</h1> */}
         <InitialBox />
       </div>
@@ -16,7 +16,7 @@ export default function homepage() {
         <h1 className="text-[35px] font-[700] ">Projects</h1>
         <h2>Some highlighted projects</h2>
         <div className="my-[40px] flex w-full justify-center gap-12 flex-wrap transform perspective-3d">
-          <Projeto
+          <Project
             key={"hidrofobia"}
             name={"Hidrofobia"}
             img={"/assets/projects/hidrofobia.png"}
@@ -24,7 +24,7 @@ export default function homepage() {
             stack={["reactJS", "nextJS", "tailwindcss"]}
             description="Hidrofobia is a website developed with the purpose of promoting the film that I produced and directed. Not just publicizing, but being a means of raising funds for the film's production through a personalized and exclusive form integrated with Google Forms. In this project there is also a gallery of behind-the-scenes photos from the recording days."
           />
-          <Projeto
+          <Project
             key={"Somuuh"}
             name={"Somuuh"}
             img={"/assets/projects/somuuh.png"}
@@ -38,7 +38,7 @@ export default function homepage() {
             ]}
             description="Somuuh is a social network project focused on working with authentication and design. Exploring references such as Instagram, Twitter and Spotify."
           />
-          <Projeto
+          <Project
             key={"Notein"}
             name={"Notein"}
             img={"/assets/projects/notein.png"}
@@ -53,7 +53,7 @@ export default function homepage() {
             ]}
             description="NoteIn is a project in which I focused on working with authentication with a non-real database (mongoDB)"
           />
-          <Projeto
+          <Project
             key={"Pokedex"}
             name={"Pokedex"}
             img={"/assets/projects/pokedex.png"}
@@ -61,7 +61,7 @@ export default function homepage() {
             stack={["reactJS", "nextJS", "sass"]}
             description="Pokedex is a project that aims to bring together all the pokemons in one place, with their information, such as abilities (in bars) and images"
           />
-          <Projeto
+          <Project
             key={"ToDo"}
             name={"ToDo"}
             img={"/assets/projects/todo.png"}
@@ -69,7 +69,7 @@ export default function homepage() {
             stack={["reactJS", "nextJS", "sass", "typescript", "localStorage"]}
             description="ToDo is a web application that seeks to store items defined by the user in the browser, mark them as completed or even remove them. React, Next.js, LocalStorage, Typescript and SASS were used."
           />
-          <Projeto
+          <Project
             key={"Compare"}
             name={"Compare"}
             img={"/assets/projects/compare.png"}
