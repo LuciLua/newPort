@@ -11,16 +11,13 @@ const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 })
 
-const locales = ['en', 'pt', 'fr']
+const locales = ["en", "pt", "fr"]
 
 export default function root_layout({ children, params }) {
-
-
   const { locale } = params
   if (!locales.includes(locale)) {
     notFound()
   }
-
 
   return (
     <html lang={locale}>

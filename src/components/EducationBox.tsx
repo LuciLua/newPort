@@ -25,7 +25,7 @@ export function EducationBox({
   credential,
   credentialLabel,
   style,
-  moreText
+  moreText,
 }: EducationBoxProps) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -59,15 +59,11 @@ export function EducationBox({
         </h2>
       </div>
       <div className="w-full mt-[10px] text-[15px] text-[#454545]">
-        {moreText ?
-          <MoreText numOfLines={2}>
-            {courseDescription}
-          </MoreText>
-          :
-          <p>
-            {courseDescription}
-          </p>
-        }
+        {moreText ? (
+          <MoreText numOfLines={2}>{courseDescription}</MoreText>
+        ) : (
+          <p>{courseDescription}</p>
+        )}
       </div>
       {credential && (
         <a

@@ -20,7 +20,7 @@ export function ModalContextProvider({ children }) {
         modalType,
         toggleModalOpen,
         setModalContent,
-        setModalType
+        setModalType,
       }}
     >
       {children}

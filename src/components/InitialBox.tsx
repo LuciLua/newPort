@@ -61,14 +61,12 @@ export function InitialBox() {
               {translations.initial_box.h2}
             </h2>
             <div className="flex gap-[10px] flex-col">
-              <h1 className="font-[800] text-[#1b1b1b] mt-[30px]">{translations.initial_box.about_me}</h1>
-              <p className="font-[500]">
-                {translations.initial_box.p}
-              </p>
+              <h1 className="font-[800] text-[#1b1b1b] mt-[30px]">
+                {translations.initial_box.about_me}
+              </h1>
+              <p className="font-[500]">{translations.initial_box.p}</p>
               <div className="flex w-fit gap-5 mt-[30px] z-20">
-                <button
-                  className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]"
-                >
+                <button className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]">
                   {translations.initial_box.primary_btn}
                 </button>
                 <button className="bg-[#ddd] text-[#262626] px-[30px] py-[10px] font-[500] rounded-[3px]">

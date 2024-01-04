@@ -1,4 +1,4 @@
-import { ItemMenuDropdown } from "./ItemMenuDropdown";
+import { ItemMenuDropdown } from "./ItemMenuDropdown"
 
 export function Menu() {
   return (
@@ -6,8 +6,12 @@ export function Menu() {
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <li className="flex h-full justify-center items-center gap-5">
           <div className="flex flex-col justify-center leading-[20px]">
-            <h1 className="text-[27px] font-black text-[#262626]">Luci Lua /{">"}</h1>
-            <a href="#" className="text-[16px] font-medium">Frontend Developer</a>
+            <h1 className="text-[27px] font-black text-[#262626]">
+              Luci Lua /{">"}
+            </h1>
+            <a href="#" className="text-[16px] font-medium">
+              Frontend Developer
+            </a>
           </div>
           <ItemMenuDropdown />
         </li>
