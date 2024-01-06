@@ -12,7 +12,18 @@ import {
   BiLogoVuejs,
   BiWorld,
 } from "react-icons/bi"
-import { SiAdobeindesign, SiCodesignal, SiExpress, SiMongodb, SiMysql, SiNextdotjs, SiNpm, SiPostgresql, SiPython, SiYarn } from "react-icons/si"
+import {
+  SiAdobeindesign,
+  SiCodesignal,
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNpm,
+  SiPostgresql,
+  SiPython,
+  SiYarn,
+} from "react-icons/si"
 import { ViewCV } from "../../components/Btns/ViewCV"
 import { CurriculumModal } from "../../components/CurriculumModal"
 import { EducationBox } from "../../components/EducationBox"
@@ -20,7 +31,7 @@ import { InitialBox } from "../../components/InitialBox"
 import { Project } from "../../components/Project"
 import { AiOutlineAntDesign, AiOutlineArrowRight } from "react-icons/ai"
 
-import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5"
 
 export default function homepage() {
   return (
@@ -191,7 +202,9 @@ export default function homepage() {
             <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#121212] text-[#fff] rounded-tl-[12px] rounded-tr-[12px]">
               Frontend
             </h3>
-            <h4 className="bg-[#fff] text-[#121212] rounded-[30px] px-5 border-[3px] font-[700] text-[15px] border-[#121212] absolute top-[-12px] w-fit h-fit">Main</h4>
+            <h4 className="bg-[#fff] text-[#121212] rounded-[30px] px-5 border-[3px] font-[700] text-[15px] border-[#121212] absolute top-[-12px] w-fit h-fit">
+              Main
+            </h4>
             <div className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
               <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
                 <BiLogoHtml5 className="text-[30px]" />
@@ -257,11 +270,19 @@ export default function homepage() {
           </ul>
         </div>
       </div>
-      <p className="xl:text-[18px] text-nowrap text-sm w-full h-fit flex justify-center items-center font-[500] py-4 bg-black text-[#fff]"><span className="underline mr-1 flex gap-2 justify-center items-center"><IoChatbubbleEllipsesOutline /> Talk to me</span> and I can tell you about my <span className="bg-[#121212] text-[#fff]  ml-1 px-1 rounded-[3px]">soft skills!</span></p>
+      <p className="xl:text-[18px] text-nowrap text-sm w-full h-fit flex justify-center items-center font-[500] py-4 bg-black text-[#fff]">
+        <span className="underline mr-1 flex gap-2 justify-center items-center">
+          <IoChatbubbleEllipsesOutline /> Talk to me
+        </span>{" "}
+        and I can tell you about my{" "}
+        <span className="bg-[#121212] text-[#fff]  ml-1 px-1 rounded-[3px]">
+          soft skills!
+        </span>
+      </p>
       {/* <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]"> */}
       {/* <h1 className="text-[35px] font-[700]">Testimonials</h1> */}
       {/* <h2>Hard skills</h2> */}
       {/* </div > */}
-    </div >
+    </div>
   )
 }
