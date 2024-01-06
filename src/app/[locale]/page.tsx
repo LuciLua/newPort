@@ -20,6 +20,8 @@ import { InitialBox } from "../../components/InitialBox"
 import { Project } from "../../components/Project"
 import { AiOutlineAntDesign, AiOutlineArrowRight } from "react-icons/ai"
 
+import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+
 export default function homepage() {
   return (
     <div className="flex w-full h-full justify-center max-w-[100vw] overflow-x-hidden  flex-col ">
@@ -148,13 +150,13 @@ export default function homepage() {
       {/* Skills Section */}
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
         <h1 className="text-[35px] font-[700] ">Skills</h1>
-        <h2>Main skills</h2>
+        <h2>Hard skills</h2>
         <div className="flex justify-around py-10 w-full xl:flex-row flex-col items-start gap-5">
-          <ul className="w-full xl:w-full   flex flex-wrap xl:justify-start justify-center gap-4 text-[#121212] border-[1px] border-[#1212212] rounded-[12px]">
+          <ul className="w-full xl:w-full flex flex-wrap xl:justify-start justify-center gap-4 text-[#121212] border-[1px] border-[#1212212] rounded-[12px]">
             <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#e4e4e4] text-[#121212] rounded-tl-[12px] rounded-tr-[12px]">
               Backend
             </h3>
-            <div className="p-5 flex flex-wrap gap-3">
+            <div className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
               <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
                 <BiLogoNodejs className="text-[30px]" />
                 NodeJs
@@ -190,7 +192,7 @@ export default function homepage() {
               Frontend
             </h3>
             <h4 className="bg-[#fff] text-[#121212] rounded-[30px] px-5 border-[3px] font-[700] text-[15px] border-[#121212] absolute top-[-12px] w-fit h-fit">Main</h4>
-            <div className="p-5 flex flex-wrap gap-3">
+            <div className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
               <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
                 <BiLogoHtml5 className="text-[30px]" />
                 HTML
@@ -231,9 +233,9 @@ export default function homepage() {
           </ul>
           <ul className="w-full xl:w-full   flex flex-wrap xl:justify-start justify-center gap-4 text-[#121212] border-[1px] border-[#1212212] rounded-[12px]">
             <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#e4e4e4] text-[#121212] rounded-tl-[12px] rounded-tr-[12px]">
-              Outros
+              Others
             </h3>
-            <div className="p-5 flex flex-wrap gap-3">
+            <div className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
               <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
                 <BiLogoGit className="text-[30px]" />
                 Git
@@ -255,6 +257,11 @@ export default function homepage() {
           </ul>
         </div>
       </div>
+      <p className="xl:text-[18px] text-nowrap text-sm w-full h-fit flex justify-center items-center font-[500] py-4 bg-black text-[#fff]"><span className="underline mr-1 flex gap-2 justify-center items-center"><IoChatbubbleEllipsesOutline /> Talk to me</span> and I can tell you about my <span className="bg-[#121212] text-[#fff]  ml-1 px-1 rounded-[3px]">soft skills!</span></p>
+      {/* <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]"> */}
+      {/* <h1 className="text-[35px] font-[700]">Testimonials</h1> */}
+      {/* <h2>Hard skills</h2> */}
+      {/* </div > */}
     </div >
   )
 }

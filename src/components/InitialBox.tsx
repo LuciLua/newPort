@@ -4,8 +4,6 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { BiMailSend } from "react-icons/bi"
 import { useRef } from "react"
 import { toast } from "react-toastify"
-import Cookies from "js-cookie"
-import { MoreText } from "./Btns/MoreText"
 import { useTranslation } from "../hooks/useTranslation"
 
 export function InitialBox() {
@@ -65,11 +63,11 @@ export function InitialBox() {
                 {translations.initial_box.about_me}
               </h1>
               <p className="font-[500]">{translations.initial_box.p}</p>
-              <div className="flex w-fit gap-5 mt-[30px] z-20">
-                <button className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]">
+              <div className="flex w-fit xl:gap-5 gap-2 mt-[30px] z-20">
+                <button className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
                   {translations.initial_box.primary_btn}
                 </button>
-                <button className="bg-[#ddd] text-[#262626] px-[30px] py-[10px] font-[500] rounded-[3px]">
+                <button className="bg-[#ddd] text-[#262626] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
                   {translations.initial_box.secondary_btn}
                 </button>
               </div>
