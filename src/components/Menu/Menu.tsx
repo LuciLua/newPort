@@ -13,18 +13,18 @@ export function Menu() {
               Frontend Developer
             </a>
           </div>
-          <ItemMenuDropdown />
         </li>
         <li>
-          <ul className="list-none gap-10 flex items-center w-fit h-full font-[700]">
+          <ul className="list-none xl:gap-10 gap-3 flex items-center w-fit h-full font-[700]">
             <div className="lg:flex gap-10 hidden">
               <li>Homepage</li>
               <li>Projects</li>
               <li>About me</li>
             </div>
-            <li className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px]">
+            <li className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
               Talk with me
             </li>
+            <ItemMenuDropdown />
           </ul>
         </li>
       </ul>

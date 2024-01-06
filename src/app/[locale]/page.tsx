@@ -1,9 +1,24 @@
+import {
+  BiLogoAngular,
+  BiLogoCss3,
+  BiLogoGit,
+  BiLogoGithub,
+  BiLogoHtml5,
+  BiLogoJavascript,
+  BiLogoNodejs,
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoTypescript,
+  BiLogoVuejs,
+  BiWorld,
+} from "react-icons/bi"
+import { SiAdobeindesign, SiCodesignal, SiExpress, SiMongodb, SiMysql, SiNextdotjs, SiNpm, SiPostgresql, SiPython, SiYarn } from "react-icons/si"
 import { ViewCV } from "../../components/Btns/ViewCV"
 import { CurriculumModal } from "../../components/CurriculumModal"
 import { EducationBox } from "../../components/EducationBox"
 import { InitialBox } from "../../components/InitialBox"
 import { Project } from "../../components/Project"
-import { AiOutlineArrowRight } from "react-icons/ai"
+import { AiOutlineAntDesign, AiOutlineArrowRight } from "react-icons/ai"
 
 export default function homepage() {
   return (
@@ -12,6 +27,7 @@ export default function homepage() {
         {/* <h1 className="font-black text-[30px]">{lang}</h1> */}
         <InitialBox />
       </div>
+      {/* Projects Section */}
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
         <h1 className="text-[35px] font-[700] ">Projects</h1>
         <h2>Some highlighted projects</h2>
@@ -84,6 +100,7 @@ export default function homepage() {
           </button>
         </div>
       </div>
+      {/* Education Section */}
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
         <h1 className="text-[35px] font-[700] pb-[20px]">Education</h1>
         <div className="flex w-full justify-center gap-5 flex-wrap p-[20px]">
@@ -116,7 +133,7 @@ export default function homepage() {
             moreText
           />
 
-          <div className="flex gap-5 justify-center py-5 items-center w-full">
+          <div className="flex gap-5 justify-center pt-10 items-center w-full">
             <a
               href="/assets/cv/curriculum.pdf"
               className="bg-[#121212] text-white px-4 py-1 rounded-[30px]"
@@ -128,6 +145,116 @@ export default function homepage() {
           </div>
         </div>
       </div>
-    </div>
+      {/* Skills Section */}
+      <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
+        <h1 className="text-[35px] font-[700] ">Skills</h1>
+        <h2>Main skills</h2>
+        <div className="flex justify-around py-10 w-full xl:flex-row flex-col items-start gap-5">
+          <ul className="w-full xl:w-full   flex flex-wrap xl:justify-start justify-center gap-4 text-[#121212] border-[1px] border-[#1212212] rounded-[12px]">
+            <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#e4e4e4] text-[#121212] rounded-tl-[12px] rounded-tr-[12px]">
+              Backend
+            </h3>
+            <div className="p-5 flex flex-wrap gap-3">
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoNodejs className="text-[30px]" />
+                NodeJs
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoJavascript className="text-[30px]" />
+                JavaScript
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiExpress className="text-[30px]" />
+                Express
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiPostgresql className="text-[30px]" />
+                Postgresql
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiMysql className="text-[30px]" />
+                MySQL
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiMongodb className="text-[30px]" />
+                MongoDB
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiPython className="text-[30px]" />
+                Python
+              </li>
+            </div>
+          </ul>
+          <ul className="w-full xl:w-full   flex flex-wrap  justify-center gap-4 text-[#121212] border-[1px] relative border-[#1212212] rounded-[12px]">
+            <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#121212] text-[#fff] rounded-tl-[12px] rounded-tr-[12px]">
+              Frontend
+            </h3>
+            <h4 className="bg-[#fff] text-[#121212] rounded-[30px] px-5 border-[3px] font-[700] text-[15px] border-[#121212] absolute top-[-12px] w-fit h-fit">Main</h4>
+            <div className="p-5 flex flex-wrap gap-3">
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoHtml5 className="text-[30px]" />
+                HTML
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoCss3 className="text-[30px]" />
+                CSS
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoTailwindCss className="text-[30px]" />
+                TailwindCSS
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoTypescript className="text-[30px]" />
+                Typescript
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoReact className="text-[30px]" />
+                React
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoAngular className="text-[30px]" />
+                AngularJs
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoVuejs className="text-[30px]" />
+                VueJs
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiNextdotjs className="text-[30px]" />
+                NextJs
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoJavascript className="text-[30px]" />
+                JavaScript
+              </li>
+            </div>
+          </ul>
+          <ul className="w-full xl:w-full   flex flex-wrap xl:justify-start justify-center gap-4 text-[#121212] border-[1px] border-[#1212212] rounded-[12px]">
+            <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#e4e4e4] text-[#121212] rounded-tl-[12px] rounded-tr-[12px]">
+              Outros
+            </h3>
+            <div className="p-5 flex flex-wrap gap-3">
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoGit className="text-[30px]" />
+                Git
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiLogoGithub className="text-[30px]" />
+                GitHub
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <BiWorld className="text-[30px]" /> SEO
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiNpm className="text-[30px]" /> NPM and Yarn
+              </li>
+              <li className="border-[1px] border-[#ddd] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2">
+                <SiAdobeindesign className="text-[30px]" /> UI/UX Design
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div >
   )
 }
