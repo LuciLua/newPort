@@ -32,6 +32,7 @@ import { Project } from "../../components/Project"
 import { AiOutlineAntDesign, AiOutlineArrowRight } from "react-icons/ai"
 
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5"
+import { HorizontalScrolling } from "../../components/HorizontalScrolling"
 
 export default function homepage() {
   return (
@@ -279,10 +280,10 @@ export default function homepage() {
           soft skills!
         </span>
       </p>
-      {/* <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]"> */}
-      {/* <h1 className="text-[35px] font-[700]">Testimonials</h1> */}
-      {/* <h2>Hard skills</h2> */}
-      {/* </div > */}
+      <HorizontalScrolling />
+      <div className="h-[100dvh] bg-white flex justify-center items-center">
+        <h1>Hello, World</h1>
+      </div>
     </div>
   )
 }

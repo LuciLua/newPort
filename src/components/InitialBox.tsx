@@ -5,6 +5,7 @@ import { BiMailSend } from "react-icons/bi"
 import { useRef } from "react"
 import { toast } from "react-toastify"
 import { useTranslation } from "../hooks/useTranslation"
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
 export function InitialBox() {
   const mailToRef = useRef(null)
@@ -46,6 +47,7 @@ export function InitialBox() {
     "NPM",
     "Yarn",
   ]
+
 
   return (
     <div className="bg-white border-[#262626] border-[3px] max-w-[1300px] w-full h-fit min-h-[300px] flex flex-col ">
@@ -109,18 +111,41 @@ export function InitialBox() {
         </div>
       </div>
 
-      <footer className="gap-[30px] flex border-[#262626] border-t-[3px] mt-auto w-full p-2 overflow-x-hidden">
+      <footer className="gap-[5px] flex  border-[#262626] border-t-[3px] w-full p-3 overflow-x-hidden justify-start">
         {mySkills.map((skill) => {
           return (
-            <div
-              key={skill}
-              className="font-[600] text-[#262626] text-[15px] w-fit py-1 px-2 rounded-[2px]"
-            >
-              {skill}
+            <div key={`skills_${skill}`} className="flex h-fit gap-1">
+              <motion.div
+                initial={{ x: 0 }}
+                animate={{ x: -3010 }}
+                transition={{ ease: "linear", duration: 14.8 }}
+                key={`1_${skill}`}
+                className="font-[600] text-[#262626] text-[15px] w-fit rounded-[2px] h-fit"
+              >
+                {skill}
+              </motion.div>
+              <motion.div
+                initial={{ x: 1300 }}
+                animate={{ x: -4470 }}
+                transition={{ ease: "linear", duration: 30, repeat: Infinity, delay: 7 }}
+                key={`2_${skill}`}
+                className="font-[600] text-[#262626] text-[15px] w-fit rounded-[2px] h-fit"
+              >
+                {skill}
+              </motion.div>
+              <motion.div
+                initial={{ x: 1300 }}
+                animate={{ x: -4470 }}
+                transition={{ ease: "linear", duration: 30, repeat: Infinity, delay: 21.5 }}
+                key={`3_${skill}`}
+                className="font-[600] text-[#262626] text-[15px] w-fit rounded-[2px] h-fit"
+              >
+                {skill}
+              </motion.div>
             </div>
           )
         })}
       </footer>
-    </div>
+    </div >
   )
 }
