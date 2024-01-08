@@ -1,12 +1,10 @@
-'use client'
+"use client"
 
 import { useMotionValueEvent, useScroll } from "framer-motion"
 import { ItemMenuDropdown } from "./ItemMenuDropdown"
 import { useEffect, useState } from "react"
 
 export function Menu() {
-
-
   const { scrollY } = useScroll()
   const [menuColor, setMenuColor] = useState(false)
 
@@ -18,14 +16,12 @@ export function Menu() {
     }
   })
 
-  return (menuColor ?
+  return menuColor ? (
     <div className="w-full h-[70px] bg-[#000000e7] text-[#fff]  backdrop-blur-[12px] flex justify-center fixed top-0 z-40">
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <li className="flex h-full justify-center items-center gap-5">
           <div className="flex flex-col justify-center leading-[20px]">
-            <h1 className="text-[24px] font-black">
-              LuciLua /{">"}
-            </h1>
+            <h1 className="text-[24px] font-black">LuciLua /{">"}</h1>
             <a href="#" className="text-[14px] font-medium">
               Frontend Developer
             </a>
@@ -46,14 +42,12 @@ export function Menu() {
         </li>
       </ul>
     </div>
-    :
+  ) : (
     <div className="w-full h-[70px] bg-[#ffffffe7]  backdrop-blur-[12px] flex justify-center fixed top-0 z-40">
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <li className="flex h-full justify-center items-center gap-5">
           <div className="flex flex-col justify-center leading-[20px]">
-            <h1 className="text-[24px] font-black">
-              LuciLua /{">"}
-            </h1>
+            <h1 className="text-[24px] font-black">LuciLua /{">"}</h1>
             <a href="#" className="text-[14px] font-medium">
               Frontend Developer
             </a>
@@ -74,9 +68,5 @@ export function Menu() {
         </li>
       </ul>
     </div>
-
   )
-
-
-
 }
