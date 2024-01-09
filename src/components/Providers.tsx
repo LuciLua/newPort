@@ -16,7 +16,6 @@ export function Providers({ children, params }) {
     <>
       <NextIntlClientProvider locale="pt" messages={dic}>
         <ThemeContextProvider>
-
           <TranslationContextProvider params={params}>
             <MenuStateColorProvider>
               <ModalContextProvider>

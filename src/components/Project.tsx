@@ -45,7 +45,9 @@ export function Project({ name, img, url, stack, description }) {
           })}
         </div>
         <div className="flex justify-between h-fit items-center mt-3 py-2 px-5">
-          <h1 className="text-[var(--text-h1)] text-[20px] font-[700] ">{name}</h1>
+          <h1 className="text-[var(--text-h1)] text-[20px] font-[700] ">
+            {name}
+          </h1>
           <button
             className=" text-[var(--text-h2)] underline px-5 py-1 h-fit rounded-[3px] text-nowrap"
             onClick={() => {

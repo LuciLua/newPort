@@ -9,8 +9,8 @@ export function TitleHomeSections({
 }) {
   const { translations } = useTranslation()
 
-  let title: string;
-  let h2: string;
+  let title: string
+  let h2: string
 
   if (section === "projects") {
     title = translations.projects.h1

@@ -111,7 +111,10 @@ export function InitialBox() {
       <footer className="gap-[5px] flex  border-[var(--lines-contrast)] border-t-[3px] w-full p-3 overflow-x-hidden justify-start">
         {mySkills.map((skill) => {
           return (
-            <div key={`skills_${skill}`} className="flex h-fit gap-1 text-[var(--text-h1)]">
+            <div
+              key={`skills_${skill}`}
+              className="flex h-fit gap-1 text-[var(--text-h1)]"
+            >
               <motion.div
                 initial={{ x: 0 }}
                 animate={{ x: -3010 }}

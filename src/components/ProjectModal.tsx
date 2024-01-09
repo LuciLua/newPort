@@ -56,7 +56,9 @@ export function ProjectModal() {
           >
             <AiFillCloseCircle />
           </button>
-          <h1 className="text-[var(--text-h1)] font-[700] text-[25px]">{name}</h1>
+          <h1 className="text-[var(--text-h1)] font-[700] text-[25px]">
+            {name}
+          </h1>
           <div className="flex w-full gap-2 h-fit border-y-[1px] border-y-[var(--bg-medium)] px-[4px] py-[10px] flex-wrap">
             {stack.map((tool) => {
               return (

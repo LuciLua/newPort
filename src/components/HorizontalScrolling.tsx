@@ -33,7 +33,6 @@ export function HorizontalScrolling() {
 
   const isInView = useInView(targetRef, { margin: "-50%" })
 
-
   const xs = useSpring(0)
   const spring = useSpring(xs, { stiffness: 1000, damping: 10 })
 
@@ -45,23 +44,27 @@ export function HorizontalScrolling() {
     } else {
       toggleMenuStateColor(false)
     }
-
   }, [isInView])
 
   return (
     <div className="mx-auto w-full  py-[20px] px-[10px] bg-[#000] flex justify-center items-center overflow-hidden h-fit relative">
       <div
         ref={targetRef}
-        className="h-[150vh] relative w-full max-w-[1300px] flex justify-center items-center">
-        <motion.div className="font-[900] absolute text-[300px] w-fit h-fit  text-[#ffffff03] top-0" style={{ x: x, transition: '0.3s' }}>
-        web experiences. design. development. art. creativity. modern. exclusivity. minimalism. value.
+        className="h-[150vh] relative w-full max-w-[1300px] flex justify-center items-center"
+      >
+        <motion.div
+          className="font-[900] absolute text-[300px] w-fit h-fit  text-[#ffffff03] top-0"
+          style={{ x: x, transition: "0.3s" }}
+        >
+          web experiences. design. development. art. creativity. modern.
+          exclusivity. minimalism. value.
         </motion.div>
         <div className="text-[35px] top-0 font-[700] flex-col gap-4 justify-center bg-[#000] text-[#fff] h-[80svh] sticky flex  items-center scroll-smooth">
           <motion.div
-            key={'slide_1'}
+            key={"slide_1"}
             initial={{ opacity: 0, scale: 0.8 }}
             className="flex flex-col absolu.te"
-            style={{ x: x, y: y, transition: '0.3s', scale: 1 }}
+            style={{ x: x, y: y, transition: "0.3s", scale: 1 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
@@ -70,8 +73,8 @@ export function HorizontalScrolling() {
           </motion.div>
           <motion.div
             initial={{ opacity: 0 }}
-            key={'slide_2'}
-            style={{ x: xN, y: yX, transition: '0.3s' }}
+            key={"slide_2"}
+            style={{ x: xN, y: yX, transition: "0.3s" }}
             className="flex gap-4 flex-col justify-start relative"
             exit={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -82,10 +85,16 @@ export function HorizontalScrolling() {
         </div>
       </div>
       <div className="flex justify-between px-1 text-[100%] bottom-0 absolute text-nowrap w-full h-fit bg-yellow-400 text-black">
-      <motion.div style={{ x: xC, transition: '0.3s' }} className="flex justify-between w-full">
-        <p className="font-[800]" >web experiences. design. development. art. creativity. modern. exclusivity. minimalism. value.</p>
-        <p className="font-[500]">LuciLua@2024</p>
-      </motion.div>
+        <motion.div
+          style={{ x: xC, transition: "0.3s" }}
+          className="flex justify-between w-full"
+        >
+          <p className="font-[800]">
+            web experiences. design. development. art. creativity. modern.
+            exclusivity. minimalism. value.
+          </p>
+          <p className="font-[500]">LuciLua@2024</p>
+        </motion.div>
       </div>
     </div>
   )

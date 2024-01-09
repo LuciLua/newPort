@@ -20,7 +20,7 @@ import {
   SiNextdotjs,
   SiNpm,
   SiPostgresql,
-  SiPython
+  SiPython,
 } from "react-icons/si"
 import { ViewCV } from "../../components/Btns/ViewCV"
 import { CurriculumModal } from "../../components/CurriculumModal"
@@ -116,7 +116,7 @@ export default function homepage() {
         <TitleHomeSections section="education" />
         <div className="flex w-full justify-center gap-5 flex-wrap p-[20px]">
           <EducationBox
-            key={'course_1'}
+            key={"course_1"}
             titleCourse="Curso Web Moderno Completo - Udemy"
             timeConclusion="97 hours"
             dateConclusion="2021-2023"
@@ -126,7 +126,7 @@ export default function homepage() {
             credentialLabel="Credentials"
           />
           <EducationBox
-            key={'course_2'}
+            key={"course_2"}
             style="opacity-90 xl:max-w-[600px]"
             titleCourse="Bacharelado Interdisciplinar em Artes e Design | UFJF"
             timeConclusion="3 years"
@@ -138,7 +138,7 @@ export default function homepage() {
             moreText
           />
           <EducationBox
-            key={'course_3'}
+            key={"course_3"}
             style="opacity-90 xl:max-w-[600px]"
             titleCourse="Bacharelado em Cinema e Audiovisual | UFJF"
             timeConclusion="2 years"
