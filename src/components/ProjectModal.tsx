@@ -14,27 +14,25 @@ export function ProjectModal() {
 
   async function getNewDescription() {
     const translatedModals = await translations?.projects
-     
-    
-    if(name === "hidrofobia"){
+
+    if (name === "hidrofobia") {
       setNewDescription(await translatedModals?.hidrofobia_modal?.about)
     }
-    if(name === "Somuuh"){
+    if (name === "Somuuh") {
       setNewDescription(await translatedModals?.somuuh_modal?.about)
     }
-    if(name === "NoteIn"){
+    if (name === "NoteIn") {
       setNewDescription(await translatedModals?.notein_modal?.about)
     }
-    if(name === "Pokedex"){
+    if (name === "Pokedex") {
       setNewDescription(await translatedModals?.pokedex_modal?.about)
     }
-    if(name === "ToDo"){
+    if (name === "ToDo") {
       setNewDescription(await translatedModals?.todo_modal?.about)
     }
-    if(name === "Compare"){
+    if (name === "Compare") {
       setNewDescription(await translatedModals?.compare_modal?.about)
     }
-
   }
 
   useEffect(() => {
