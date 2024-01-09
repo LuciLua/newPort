@@ -60,15 +60,15 @@ export function InitialBox() {
               {translations.initial_box.h2}
             </h2>
             <div className="flex gap-[10px] flex-col">
-              <h1 className="font-[800] mt-[30px] text-[var(--text-default)]">
+              <h1 className="font-[800] mt-[30px] text-[var(--text-h3)]">
                 {translations.initial_box.about_me}
               </h1>
               <p className="font-[500]">{translations.initial_box.p}</p>
               <div className="flex w-fit xl:gap-5 gap-2 mt-[30px] z-20">
-                <button className="bg-[#262626] text-white px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
+                <button className="bg-[var(--btn-bg-primary)] text-[var(--btn-text-primary)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
                   {translations.initial_box.primary_btn}
                 </button>
-                <button className="bg-[#ddd] text-[#262626] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
+                <button className="bg-[var(--bg-medium)] text-[var(--text-h1)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
                   {translations.initial_box.secondary_btn}
                 </button>
               </div>
@@ -111,7 +111,7 @@ export function InitialBox() {
       <footer className="gap-[5px] flex  border-[var(--lines-contrast)] border-t-[3px] w-full p-3 overflow-x-hidden justify-start">
         {mySkills.map((skill) => {
           return (
-            <div key={`skills_${skill}`} className="flex h-fit gap-1 text-[var(--text-default)]">
+            <div key={`skills_${skill}`} className="flex h-fit gap-1 text-[var(--text-h1)]">
               <motion.div
                 initial={{ x: 0 }}
                 animate={{ x: -3010 }}

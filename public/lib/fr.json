@@ -19,6 +19,7 @@
         "secondary_btn": "Trouve-le"
     },
     "projects": {
+        "discovery": "Découverte plus de projets",
         "h1": "Projets",
         "h2": "Quelques projets mis en avant",
         "cards": {

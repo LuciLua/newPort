@@ -26,7 +26,7 @@ export default function root_layout({ children, params }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>LuciLua Portfólio</title>
       </head>
-      <body className={`${montserrat.className}`}>
+      <body className={`${montserrat.className} custom-scrollbar`}>
         <Providers params={params}>
           <Menu />
           {children}

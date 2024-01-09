@@ -19,6 +19,7 @@
         "secondary_btn": "Know more"
     },
     "projects": {
+        "discovery": "Dicovery more projects",
         "h1": "Projects",
         "h2": "Some highlighted projects",
         "cards": {

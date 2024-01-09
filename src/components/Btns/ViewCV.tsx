@@ -14,7 +14,7 @@ export function ViewCV() {
 
   return (
     <button
-      className="border-b-[1px] border-b-[#121212] flex gap-1 justify-center items-center h-fit"
+      className="border-b-[1px] border-b-[var(--text-h1)] text-[var(--text-h1)] flex gap-1 justify-center items-center h-fit"
       onClick={() => openCV()}
     >
       <AiOutlineEye className="font-[12px]" /> View CV

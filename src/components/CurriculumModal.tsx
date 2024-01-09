@@ -8,7 +8,7 @@ export function CurriculumModal() {
 
   if (modalOpen && modalType == "cv") {
     return (
-      <div className="top-0 w-full h-[100dvh] min-h-[100dvh] max-h-[100dvh] bg-[#4e4e4ecf] backdrop-blur-[10px] flex justify-center items-center fixed z-50 px-3 py-[20px] left-0 ">
+      <div className="top-0 w-full h-[100dvh] min-h-[100dvh] max-h-[100dvh] bg-[var(--bg-default-opacity50)] backdrop-blur-[10px] flex justify-center items-center fixed z-50 px-3 py-[20px] left-0 ">
         <div className="relative">
           <button
             onClick={() => toggleModalOpen()}

@@ -37,7 +37,7 @@ export function Project({ name, img, url, stack, description }) {
             return (
               <div
                 key={tool}
-                className="bg-[var(--bg-medium)] text-[var(--text-default)] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]"
+                className="bg-[var(--bg-medium)] text-[var(--text-h3)] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]"
               >
                 {tool}
               </div>
@@ -57,7 +57,7 @@ export function Project({ name, img, url, stack, description }) {
             {translations.projects.cards.primary_btn}
           </button>
           <a
-            className="bg-[var(--text-default)] text-[var(--bg-default)] px-5 py-1 h-fit rounded-[3px]"
+            className="bg-[var(--btn-bg-primary)] text-[var(--btn-text-primary)] font-[500] px-5 py-1 h-fit rounded-[3px]"
             href={url}
             target="_blank"
           >
