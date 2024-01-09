@@ -15,7 +15,7 @@ export function ProjectModal() {
   async function getNewDescription() {
     const translatedModals = await translations?.projects
 
-    if (name === "hidrofobia") {
+    if (name === "Hidrofobia") {
       setNewDescription(await translatedModals?.hidrofobia_modal?.about)
     }
     if (name === "Somuuh") {
