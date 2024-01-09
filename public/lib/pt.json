@@ -6,5 +6,53 @@
         "p": "Sou uma desenvolvedora web focada em frontend, também tenho conhecimento em backend. Adoro tecnologia e estudo continuamente, buscando sempre aprender novidades. Sou formada em Artes e Design pela UFJF e possuo graduação em Cinema e Audiovisual pela mesma instituição.",
         "primary_btn": "Fale comigo",
         "secondary_btn": "Conheça mais"
+    },
+    "projects": {
+        "h1": "Projetos",
+        "h2": "Alguns projetos em destaque",
+        "cards": {
+            "title": "Hidrofobia",
+            "primary_btn": "Sobre",
+            "secundary_btn": "Acessar"
+        },
+        "modals": [
+            {
+                "title": "Hidrofobia",
+                "about": "Hidrofobia é um site desenvolvido com o propósito de promover o filme que produzi e dirigi. Não apenas publicidade, mas também como um meio de arrecadar fundos para a produção do filme por meio de um formulário personalizado e exclusivo integrado ao Google Forms. Neste projeto, também há uma galeria de fotos dos bastidores dos dias de gravação.",
+                "primary_btn": "Acessar"
+            },
+            {
+                "title": "Somuuh",
+                "about": "Somuuh é um projeto de rede social focado em autenticação e design. Explorando referências como Instagram, Twitter e Spotify.",
+                "primary_btn": "Acessar"
+            },
+            {
+                "title": "NoteIn",
+                "about": "NoteIn é um projeto no qual eu foquei em trabalhar com autenticação com um banco de dados não real (mongoDB).",
+                "primary_btn": "Acessar"
+            },
+            {
+                "title": "Pokedex",
+                "about": "Pokedex é um projeto que visa reunir todos os pokémons em um só lugar, com suas informações, como habilidades (em barras) e imagens.",
+                "primary_btn": "Acessar"
+            },
+            {
+                "title": "ToDo",
+                "about": "ToDo é uma aplicação web que busca armazenar itens definidos pelo usuário no navegador, marcá-los como concluídos ou até mesmo removê-los. Foram utilizadas tecnologias como React, Next.js, LocalStorage, Typescript e SASS.",
+                "primary_btn": "Acessar"
+            },
+            {
+                "title": "Compare",
+                "about": "Compare é uma aplicação que compara uma lista de seguidores de um usuário no GitHub com a lista de pessoas que esse usuário segue, gerando outras duas listas: a de usuários que o usuário atual segue, mas que não o seguem de volta, e a de usuários que o usuário atual não segue, mas o seguem. Gerando um link para cada perfil de usuário nessas duas listas, permitindo seguir ou deixar de seguir usuários.",
+                "primary_btn": "Acessar"
+            }
+        ]
+    },
+    "skills": {
+        "h1": "Habilidades",
+        "h2": "Habilidades Técnicas"
+    },
+    "education": {
+        "h1": "Educação"
     }
 }

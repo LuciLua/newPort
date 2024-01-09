@@ -2,10 +2,31 @@
 import { AiFillCloseCircle } from "react-icons/ai"
 import { motion } from "framer-motion"
 import { useModal } from "../hooks/useModal"
+import { useTranslation } from "../hooks/useTranslation"
+import { useEffect, useState } from "react"
 
 export function ProjectModal() {
   const { toggleModalOpen, modalOpen, modalContent, modalType } = useModal()
   const { name, img, url, stack, description } = modalContent
+  const { translations } = useTranslation()
+
+  const [newDescription, setNewDescription] = useState(description)
+
+  async function getNewDescription() {
+    const translatedModals = await translations?.projects?.modals
+    const searchModalByName = await translatedModals.find((modal) => {
+      return modal?.title === name
+    })
+    let about = description
+    about = await searchModalByName?.about
+    setNewDescription(about)
+    return about
+  }
+
+  useEffect(() => {
+    getNewDescription()
+  }, [name])
+
 
   if (modalOpen && modalType == "project") {
     return (
@@ -38,7 +59,7 @@ export function ProjectModal() {
             })}
           </div>
           <div className="custom-scrollbar overflow-y-scroll overflow-x-hidden scroll-py-[1px]">
-            <p className="p-4">{description}</p>
+            <p className="p-4">{newDescription}</p>
             <img src={img} alt="Project Image" className="py-4" />
           </div>
           <a
@@ -46,7 +67,7 @@ export function ProjectModal() {
             href={url}
             target="_blank"
           >
-            Acessar
+            {translations.projects.modals[0].primary_btn}
           </a>
         </motion.div>
       </div>

@@ -1,10 +1,58 @@
 {
     "initial_box": {
         "h1": "LuciLua",
-        "h2": "Développeur frontal",
+        "h2": "Développeur frontend",
         "about_me": "sur moi",
         "p": "Je suis un développeur web axé sur le frontend, j'ai également des connaissances en backend. J'aime la technologie et j'étudie continuellement, cherchant toujours à apprendre les nouveautés. Je suis diplômée en Arts et Design de l'UFJF et j'ai une licence en Cinéma et Audiovisuel de la même institution.",
         "primary_btn": "Parle moi",
         "secondary_btn": "Trouve-le"
+    },
+    "projects": {
+        "h1": "Projets",
+        "h2": "Quelques projets mis en avant",
+        "cards": {
+            "title": "Hidrofobia",
+            "primary_btn": "À propos",
+            "secundary_btn": "Accéder"
+        },
+        "modals": [
+            {
+                "title": "Hidrofobia",
+                "about": "Hidrofobia est un site web développé dans le but de promouvoir le film que j'ai produit et réalisé. Non seulement pour faire de la publicité, mais aussi comme moyen de collecter des fonds pour la production du film grâce à un formulaire personnalisé et exclusif intégré à Google Forms. Dans ce projet, il y a également une galerie de photos des coulisses des jours de tournage.",
+                "primary_btn": "Accéder"
+            },
+            {
+                "title": "Somuuh",
+                "about": "Somuuh est un projet de réseau social axé sur l'authentification et le design. En explorant des références telles qu'Instagram, Twitter et Spotify.",
+                "primary_btn": "Accéder"
+            },
+            {
+                "title": "NoteIn",
+                "about": "NoteIn est un projet sur lequel j'ai mis l'accent sur le travail avec l'authentification avec une base de données non réelle (mongoDB).",
+                "primary_btn": "Accéder"
+            },
+            {
+                "title": "Pokedex",
+                "about": "Pokedex est un projet qui vise à regrouper tous les Pokémon en un seul endroit, avec leurs informations, telles que les capacités (sous forme de barres) et les images.",
+                "primary_btn": "Accéder"
+            },
+            {
+                "title": "ToDo",
+                "about": "ToDo est une application web qui cherche à stocker des éléments définis par l'utilisateur dans le navigateur, les marquer comme terminés ou même les supprimer. React, Next.js, LocalStorage, Typescript et SASS ont été utilisés.",
+                "primary_btn": "Accéder"
+            },
+            {
+                "title": "Compare",
+                "about": "Comparer est une application qui compare une liste d'abonnés d'un utilisateur sur GitHub avec la liste des personnes que cet utilisateur suit, générant deux autres listes : celle des utilisateurs que l'utilisateur actuel suit mais qui ne le suivent pas en retour, et celle des utilisateurs que l'utilisateur actuel ne suit pas mais qui le suivent. Générant un lien pour chaque profil d'utilisateur dans ces deux listes, permettant de suivre ou de ne pas suivre les utilisateurs.",
+                "primary_btn": "Accéder"
+            }
+        ]
+    },
+    "skills": {
+        "h1": "Compétences",
+        "h2": "Capacités techniques"
+    },
+    "education": {
+        "h1": "Éducation"
     }
 }

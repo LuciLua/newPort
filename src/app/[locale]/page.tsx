@@ -33,6 +33,7 @@ import { AiOutlineAntDesign, AiOutlineArrowRight } from "react-icons/ai"
 
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5"
 import { HorizontalScrolling } from "../../components/HorizontalScrolling"
+import { TitleHomeSections } from "../../components/TitleHomeSections"
 
 export default function homepage() {
   return (
@@ -43,8 +44,7 @@ export default function homepage() {
       </div>
       {/* Projects Section */}
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
-        <h1 className="text-[35px] font-[700] ">Projects</h1>
-        <h2>Some highlighted projects</h2>
+        <TitleHomeSections section="projects" />
         <div className="my-[40px] flex w-full justify-center gap-12 flex-wrap transform perspective-3d">
           <Project
             key={"hidrofobia"}
@@ -70,7 +70,7 @@ export default function homepage() {
           />
           <Project
             key={"Notein"}
-            name={"Notein"}
+            name={"NoteIn"}
             img={"/assets/projects/notein.png"}
             url={"https://notein.vercel.app/"}
             stack={[
@@ -116,7 +116,7 @@ export default function homepage() {
       </div>
       {/* Education Section */}
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
-        <h1 className="text-[35px] font-[700] pb-[20px]">Education</h1>
+        <TitleHomeSections section="education" />
         <div className="flex w-full justify-center gap-5 flex-wrap p-[20px]">
           <EducationBox
             titleCourse="Curso Web Moderno Completo - Udemy"
@@ -161,8 +161,7 @@ export default function homepage() {
       </div>
       {/* Skills Section */}
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
-        <h1 className="text-[35px] font-[700] ">Skills</h1>
-        <h2>Hard skills</h2>
+      <TitleHomeSections section="skills" />
         <div className="flex justify-around py-10 w-full xl:flex-row flex-col items-start gap-5">
           <ul className="w-full xl:w-full flex flex-wrap xl:justify-start justify-center gap-4 text-[#121212] border-[1px] border-[#1212212] rounded-[12px]">
             <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#e4e4e4] text-[#121212] rounded-tl-[12px] rounded-tr-[12px]">

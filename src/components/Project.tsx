@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 import { useModal } from "../hooks/useModal"
+import { useTranslation } from "../hooks/useTranslation"
 
 export function Project({ name, img, url, stack, description }) {
   const ref = useRef<HTMLDivElement>(null)
@@ -13,6 +14,7 @@ export function Project({ name, img, url, stack, description }) {
   ]}`
 
   const { toggleModalOpen, setModalContent, setModalType } = useModal()
+  const { translations } = useTranslation()
 
   return (
     <>
@@ -45,21 +47,21 @@ export function Project({ name, img, url, stack, description }) {
         <div className="flex justify-between h-fit items-center mt-3 py-2 px-5">
           <h1 className="text-black text-[20px] font-[700] ">{name}</h1>
           <button
-            className=" text-black underline px-5 py-1 h-fit rounded-[3px]"
+            className=" text-black underline px-5 py-1 h-fit rounded-[3px] text-nowrap"
             onClick={() => {
               toggleModalOpen(),
                 setModalType("project"),
                 setModalContent({ name, img, url, stack, description })
             }}
           >
-            Sobre
+            {translations.projects.cards.primary_btn}
           </button>
           <a
             className="bg-black text-white px-5 py-1 h-fit rounded-[3px]"
             href={url}
             target="_blank"
           >
-            Acessar
+            {translations.projects.cards.secundary_btn}
           </a>
         </div>
       </motion.div>
