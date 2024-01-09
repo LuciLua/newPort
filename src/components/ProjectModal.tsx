@@ -13,18 +13,33 @@ export function ProjectModal() {
   const [newDescription, setNewDescription] = useState(description)
 
   async function getNewDescription() {
-    const translatedModals = await translations?.projects?.modals
-    const searchModalByName = await translatedModals.find((modal) => {
-      return modal?.title === name
-    })
-    let about = description
-    about = await searchModalByName?.about
-    setNewDescription(about)
-    return about
+    const translatedModals = await translations?.projects
+     
+    
+    if(name === "hidrofobia"){
+      setNewDescription(await translatedModals?.hidrofobia_modal?.about)
+    }
+    if(name === "Somuuh"){
+      setNewDescription(await translatedModals?.somuuh_modal?.about)
+    }
+    if(name === "NoteIn"){
+      setNewDescription(await translatedModals?.notein_modal?.about)
+    }
+    if(name === "Pokedex"){
+      setNewDescription(await translatedModals?.pokedex_modal?.about)
+    }
+    if(name === "ToDo"){
+      setNewDescription(await translatedModals?.todo_modal?.about)
+    }
+    if(name === "Compare"){
+      setNewDescription(await translatedModals?.compare_modal?.about)
+    }
+
   }
 
   useEffect(() => {
     getNewDescription()
+    console.log(newDescription)
   }, [name])
 
   if (modalOpen && modalType == "project") {
@@ -66,7 +81,7 @@ export function ProjectModal() {
             href={url}
             target="_blank"
           >
-            {translations.projects.modals[0].primary_btn}
+            {translations.projects.primary_btn}
           </a>
         </motion.div>
       </div>

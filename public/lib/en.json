@@ -15,38 +15,31 @@
             "primary_btn": "About",
             "secundary_btn": "Access"
         },
-        "modals": [
-            {
-                "title": "Hidrofobia",
-                "about": "Hidrofobia is a website developed with the purpose of promoting the film that I produced and directed. Not just publicizing, but being a means of raising funds for the film's production through a personalized and exclusive form integrated with Google Forms. In this project there is also a gallery of behind-the-scenes photos from the recording days.",
-                "primary_btn": "Access"
-            },
-            {
-                "title": "Somuuh",
-                "about": "Somuuh is a social network project focused on working with authentication and design. Exploring references such as Instagram, Twitter and Spotify.",
-                "primary_btn": "Access"
-            },
-            {
-                "title": "NoteIn",
-                "about": "NoteIn is a project in which I focused on working with authentication with a non-real database (mongoDB)",
-                "primary_btn": "Access"
-            },
-            {
-                "title": "Pokedex",
-                "about": "Pokedex is a project that aims to bring together all the pokemons in one place, with their information, such as abilities (in bars) and images",
-                "primary_btn": "Access"
-            },
-            {
-                "title": "ToDo",
-                "about": "ToDo is a web application that seeks to store items defined by the user in the browser, mark them as completed or even remove them. React, Next.js, LocalStorage, Typescript and SASS were used.",
-                "primary_btn": "Access"
-            },
-            {
-                "title": "Compare",
-                "about": "Compare is an application that compares a list of followers of a user on github with the list of people that this user follows, generating two other lists: that of users that the current user follows but does not follow him back, and that of users that the current user does not follow but follow him. Generating a link for each user profile in these two lists, allowing you to follow or unfollow users",
-                "primary_btn": "Access"
-            }
-        ]
+        "primary_btn": "Access",
+        "hidrofobia_modal": {
+            "title": "Hidrofobia",
+            "about": "Hidrofobia is a website developed with the purpose of promoting the film that I produced and directed. Not just publicizing, but being a means of raising funds for the film's production through a personalized and exclusive form integrated with Google Forms. In this project there is also a gallery of behind-the-scenes photos from the recording days."
+        },
+        "somuuh_modal": {
+            "title": "Somuuh",
+            "about": "Somuuh is a social network project focused on working with authentication and design. Exploring references such as Instagram, Twitter and Spotify."
+        },
+        "notein_modal": {
+            "title": "NoteIn",
+            "about": "NoteIn is a project in which I focused on working with authentication with a non-real database (mongoDB)"
+        },
+        "pokedex_modal": {
+            "title": "Pokedex",
+            "about": "Pokedex is a project that aims to bring together all the pokemons in one place, with their information, such as abilities (in bars) and images"
+        },
+        "todo_modal": {
+            "title": "ToDo",
+            "about": "ToDo is a web application that seeks to store items defined by the user in the browser, mark them as completed or even remove them. React, Next.js, LocalStorage, Typescript and SASS were used."
+        },
+        "compare_modal": {
+            "title": "Compare",
+            "about": "Compare is an application that compares a list of followers of a user on github with the list of people that this user follows, generating two other lists: that of users that the current user follows but does not follow him back, and that of users that the current user does not follow but follow him. Generating a link for each user profile in these two lists, allowing you to follow or unfollow users"
+        }
     },
     "skills": {
         "h1": "Skills",
