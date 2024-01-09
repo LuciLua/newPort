@@ -161,7 +161,7 @@ export default function homepage() {
       </div>
       {/* Skills Section */}
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
-      <TitleHomeSections section="skills" />
+        <TitleHomeSections section="skills" />
         <div className="flex justify-around py-10 w-full xl:flex-row flex-col items-start gap-5">
           <ul className="w-full xl:w-full flex flex-wrap xl:justify-start justify-center gap-4 text-[#121212] border-[1px] border-[#1212212] rounded-[12px]">
             <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[#e4e4e4] text-[#121212] rounded-tl-[12px] rounded-tr-[12px]">

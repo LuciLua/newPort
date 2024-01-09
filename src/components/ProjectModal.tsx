@@ -27,7 +27,6 @@ export function ProjectModal() {
     getNewDescription()
   }, [name])
 
-
   if (modalOpen && modalType == "project") {
     return (
       <div className="top-0 w-full h-[100dvh] min-h-[100dvh] max-h-[100dvh] bg-[#ffffffcf] backdrop-blur-[10px] flex flex-col justify-center items-center fixed z-50 px-3 py-[20px]">
