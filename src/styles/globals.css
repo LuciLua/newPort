@@ -38,3 +38,29 @@ body {
     border-radius: 30px;
   }
 }
+
+:root body.light,
+html.light {
+  --bg-default: #fff;
+  --bg-medium: #ddd;
+  --bg-medium-soft: #f4f4f4;
+  
+  --lines_contrast: #000;
+  --text-default: #121212;
+  --text-h1: #000000;
+  --text-h2: #363636;
+  --border-medium: #ddd;
+}
+
+:root body.dark,
+html.dark {
+  --bg-default: #141315;
+  --bg-medium: #282a30;
+  --bg-medium-soft: #0e0e0f;
+
+  --lines-contrast: #fff;
+  --text-default: #a1a1a1;
+  --text-h1: #fff;
+  --text-h2: #afafaf;
+  --border-medium: #48484a;
+}

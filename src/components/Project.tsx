@@ -19,7 +19,7 @@ export function Project({ name, img, url, stack, description }) {
   return (
     <>
       <motion.div
-        className="w-fit rounded-[12px] max-w-[350px] h-fit min-w-[300px] min-h-[250px] border-[1px] overflow-hidden border-[#ddd]"
+        className="w-fit rounded-[12px] max-w-[350px] h-fit min-w-[300px] min-h-[250px] border-[1px] overflow-hidden border-[var(--bg-medium)]"
         ref={ref}
         style={{
           transform: isInView ? "none" : rotated,
@@ -32,12 +32,12 @@ export function Project({ name, img, url, stack, description }) {
           alt="image_project"
           className="w-full object-contain h-fit opacity-90  grayscale-[0.3] contrast-[1.1] brightness-[0.95]"
         />
-        <div className="flex w-full gap-2 h-fit border-y-[1px] border-y-[#ddd] px-[4px] py-[10px] flex-wrap">
+        <div className="flex w-full gap-2 h-fit border-y-[1px] border-y-[var(--bg-medium)] px-[4px] py-[10px] flex-wrap">
           {stack.map((tool) => {
             return (
               <div
                 key={tool}
-                className="bg-[#ebebeb] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]"
+                className="bg-[var(--bg-medium)] text-[var(--text-default)] px-[8px] py-[3px] flex text-[13px] font-[500] rounded-[4px]"
               >
                 {tool}
               </div>
@@ -45,9 +45,9 @@ export function Project({ name, img, url, stack, description }) {
           })}
         </div>
         <div className="flex justify-between h-fit items-center mt-3 py-2 px-5">
-          <h1 className="text-black text-[20px] font-[700] ">{name}</h1>
+          <h1 className="text-[var(--text-h1)] text-[20px] font-[700] ">{name}</h1>
           <button
-            className=" text-black underline px-5 py-1 h-fit rounded-[3px] text-nowrap"
+            className=" text-[var(--text-h2)] underline px-5 py-1 h-fit rounded-[3px] text-nowrap"
             onClick={() => {
               toggleModalOpen(),
                 setModalType("project"),
@@ -57,7 +57,7 @@ export function Project({ name, img, url, stack, description }) {
             {translations.projects.cards.primary_btn}
           </button>
           <a
-            className="bg-black text-white px-5 py-1 h-fit rounded-[3px]"
+            className="bg-[var(--text-default)] text-[var(--bg-default)] px-5 py-1 h-fit rounded-[3px]"
             href={url}
             target="_blank"
           >
@@ -65,7 +65,6 @@ export function Project({ name, img, url, stack, description }) {
           </a>
         </div>
       </motion.div>
-      {/* {modalOpen && <ProjectModal name={name} url={url}  img={img} stack={stack} description="teste" />} */}
     </>
   )
 }

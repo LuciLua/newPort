@@ -14,13 +14,9 @@ export function MoreText({
 }) {
   const [num, setNum] = useState(2)
 
-  // useEffect(() => {
-  // }, [num])
-
   function moreText() {
     setNum(999)
   }
-  console.log(num)
 
   return (
     <div className={`${style}`}>
@@ -32,9 +28,7 @@ export function MoreText({
         </p>
       ) : (
         <div className="flex flex-col">
-          <p
-            className={`line-clamp-2 overflow-hidden font-[500] z-20 text-justify`}
-          >
+          <p className={`line-clamp-2 overflow-hidden font-[500] z-20 text-justify`}>
             {children}
           </p>
           <TfiMoreAlt

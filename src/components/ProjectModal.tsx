@@ -37,7 +37,6 @@ export function ProjectModal() {
 
   useEffect(() => {
     getNewDescription()
-    console.log(newDescription)
   }, [name])
 
   if (modalOpen && modalType == "project") {

@@ -42,23 +42,23 @@ export function EducationBox({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className={`${style} bg-[#fafafa] border-[1px] border-[#ddd] shadow-lg mr-auto flex flex-col p-4 justify-between w-full rounded-[4px] h-fit`}
+      className={`${style} border-[1px] border-[var(--border-medium)] shadow-lg mr-auto flex flex-col p-4 justify-between w-full rounded-[4px] h-fit bg-[var(--bg-medium-soft)]`}
     >
       <div className="flex flex-col w-full">
         <div className="flex justify-between">
-          <h1 className="font-[600] text-[16px] text-[#121212]">
+          <h1 className="font-[600] text-[16px] text-[var(--text-h1)]">
             {titleCourse}
           </h1>
-          <span className="text-nowrap max-h-[25px] font-[500] text-[14px]  bg-[#e7e7e7] text-[#232323] rounded-full px-2 flex justify-center items-center gap-2">
+          <span className="text-nowrap max-h-[25px] font-[500] text-[14px]  bg-[var(--bg-medium)] text-[var(--text-default)] rounded-full px-2 flex justify-center items-center gap-2">
             <AiOutlineClockCircle />
             {timeConclusion}
           </span>
         </div>
-        <h2 className="font-[500] text-[14px] py-[4px] text-[#1d1d1d]">
+        <h2 className="font-[500] text-[14px] py-[4px] text-[var(--text-h2)]">
           {dateConclusion}
         </h2>
       </div>
-      <div className="w-full mt-[10px] text-[15px] text-[#454545]">
+      <div className="w-full mt-[10px] text-[15px] text-[var(--text-default)]">
         {moreText ? (
           <MoreText numOfLines={2}>{courseDescription}</MoreText>
         ) : (
@@ -69,7 +69,7 @@ export function EducationBox({
         <a
           href={credentialLink}
           target="_blank"
-          className="self-start py-[10px] font-[400] text-[14px] underline text-[#858585]"
+          className="self-start py-[10px] font-[400] text-[14px] underline text-[var(--text-default)]"
         >
           {credentialLabel}
         </a>

@@ -46,6 +46,7 @@ export function HorizontalScrolling() {
         <div className="text-[35px] top-0 font-[700] flex-col gap-4 justify-center bg-[#000] text-[#fff]  h-[100svh] sticky flex  items-center scroll-smooth">
           <AnimatePresence>
             <motion.div
+              key={'slide_1'}
               animate={{ fontSmooth: 900, WebkitFontSmoothing: 999 }}
               className="flex flex-col"
               style={{ x: x, y: y }}
@@ -56,6 +57,7 @@ export function HorizontalScrolling() {
               <h1 className="text-[12vw]">Creativity</h1>
             </motion.div>
             <motion.div
+              key={'slide_2'}
               style={{ x: xN, y: y }}
               className="flex gap-4 flex-col"
               exit={{ opacity: 0 }}
