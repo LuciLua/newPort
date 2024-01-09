@@ -18,11 +18,11 @@ export function CurriculumModal() {
           </button>
           <div className="gap-3 w-fit h-fit min-h-[200px] max-h-[calc(100dvh-100px)] relative flex  p-4 rounded-[4px] flex-wrap overflow-y-scroll overflow-x-hidden custom-scrollbar">
             <img
-              className="relative h-[770px] rounded-[12px] object-cover"
+              className="relative h-[770px] rounded-[12px] object-contain"
               src="/assets/cv/page1.png"
             />
             <img
-              className="relative h-[770px] rounded-[12px] object-cover"
+              className="relative h-[770px] rounded-[12px] object-contain"
               src="/assets/cv/page2.png"
             />
           </div>

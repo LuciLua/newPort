@@ -7,6 +7,7 @@ import { TranslationContextProvider } from "../contexts/TranslationContext"
 
 import { dictionaries } from "../dictionaries/dictionaries"
 import { ModalContextProvider } from "../contexts/ModalContext"
+import { MenuStateColorProvider } from "../contexts/MenuStateColor"
 
 export function Providers({ children, params }) {
   const dic = dictionaries()
@@ -14,12 +15,14 @@ export function Providers({ children, params }) {
     <>
       <NextIntlClientProvider locale="pt" messages={dic}>
         <TranslationContextProvider params={params}>
-          <ModalContextProvider>
-            {children}
-            <ToastContainer className={"z-40"} />
-          </ModalContextProvider>
+          <MenuStateColorProvider>
+            <ModalContextProvider>
+              {children}
+              <ToastContainer className={"z-40"} />
+            </ModalContextProvider>
+          </MenuStateColorProvider>
         </TranslationContextProvider>
-      </NextIntlClientProvider>
+      </NextIntlClientProvider >
     </>
   )
 }

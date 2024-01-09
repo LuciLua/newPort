@@ -1,23 +1,14 @@
 "use client"
 
-import { useMotionValueEvent, useScroll } from "framer-motion"
 import { ItemMenuDropdown } from "./ItemMenuDropdown"
-import { useEffect, useState } from "react"
+import { useMenuStateColor } from "../../hooks/useMenuStateColor"
 
 export function Menu() {
-  const { scrollY } = useScroll()
-  const [menuColor, setMenuColor] = useState(false)
+  const { menuStateColor } = useMenuStateColor()
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest > 10) {
-      setMenuColor(true)
-    } else {
-      setMenuColor(false)
-    }
-  })
 
-  return menuColor ? (
-    <div className="w-full h-[70px] bg-[#000000e7] text-[#fff]  backdrop-blur-[12px] flex justify-center fixed top-0 z-40">
+  return menuStateColor ? (
+    <div className="w-full h-[70px] bg-[#000000e7] text-[#fff]  backdrop-blur-[12px] flex justify-center fixed top-0 z-40 transition-[0.3s]">
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <li className="flex h-full justify-center items-center gap-5">
           <div className="flex flex-col justify-center leading-[20px]">
@@ -34,7 +25,7 @@ export function Menu() {
               <li>Projects</li>
               <li>About me</li>
             </div>
-            <li className="bg-[#262626] text-[14px] text-white px-[30px] py-[10px] font-[600] rounded-[3px] text-nowrap">
+            <li className="bg-[#fff] text-[14px] text-[#000] px-[30px] py-[10px] font-[600] rounded-[3px] text-nowrap">
               Talk with me
             </li>
             <ItemMenuDropdown />
