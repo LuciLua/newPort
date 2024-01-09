@@ -1,4 +1,15 @@
 {
+    "current_lang": "English",
+    "lang_opt_1": "English",
+    "lang_opt_2": "Portuguese",
+    "lang_opt_3": "French",
+    "menu": {
+        "logo": "Frontend Developer",
+        "homepage": "Homepage",
+        "projects": "Projects",
+        "about": "About me",
+        "primary_btn": "Talk with me"
+    },
     "initial_box": {
         "h1": "LuciLua",
         "h2": "Frontend Developer",
