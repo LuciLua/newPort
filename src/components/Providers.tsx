@@ -22,7 +22,7 @@ export function Providers({ children, params }) {
             </ModalContextProvider>
           </MenuStateColorProvider>
         </TranslationContextProvider>
-      </NextIntlClientProvider >
+      </NextIntlClientProvider>
     </>
   )
 }

@@ -6,7 +6,6 @@ import { useMenuStateColor } from "../../hooks/useMenuStateColor"
 export function Menu() {
   const { menuStateColor } = useMenuStateColor()
 
-
   return menuStateColor ? (
     <div className="w-full h-[70px] bg-[#000000e7] text-[#fff]  backdrop-blur-[12px] flex justify-center fixed top-0 z-40 transition-[0.3s]">
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
