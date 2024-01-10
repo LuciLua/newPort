@@ -59,7 +59,6 @@ html.light {
   --bg-dropdown-active: #ffffff;
   --text-dropdown: #0e0e0e;
   --text-dropdown-hover: #fafafa;
-  
 
   --lines_contrast: #000;
   --text-default: #121212;
@@ -70,8 +69,6 @@ html.light {
 
   --btn-bg-primary: #000;
   --btn-text-primary: #fff;
-
-
 }
 
 :root body.dark,

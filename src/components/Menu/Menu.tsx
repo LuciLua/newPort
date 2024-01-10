@@ -23,8 +23,9 @@ export function Menu() {
 
   return (
     <div
-      className={`w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${menuStateColor ? hiddenMenuStateColor() : visibleMenuStateColor()
-        }`}
+      className={`w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${
+        menuStateColor ? hiddenMenuStateColor() : visibleMenuStateColor()
+      }`}
     >
       <ul className="list-none flex justify-between w-full max-w-[1300px] h-full  items-center px-[10px]">
         <li className="flex h-full justify-center items-center gap-5">
@@ -43,9 +44,16 @@ export function Menu() {
               </li>
               <li>{translations.menu.projects}</li>
               <li>{translations.menu.about}</li>
-              <li><ItemMenuDropdown label={translations.menu.config} type="config" /></li>
+              <li>
+                <ItemMenuDropdown
+                  label={translations.menu.config}
+                  type="config"
+                />
+              </li>
             </div>
-            <li className={`bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] p-[10px] font-[600] rounded-[3px] text-nowrap xl:flex hidden`}>
+            <li
+              className={`bg-[var(--text-h1)] text-[var(--bg-default)] text-[14px] p-[10px] font-[600] rounded-[3px] text-nowrap xl:flex hidden`}
+            >
               {translations.menu.primary_btn}
             </li>
 
@@ -64,15 +72,26 @@ export function Menu() {
                     {translations.menu.primary_btn}
                   </li>
                   <li className="w-full">
-                    <a className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex" href="#">{translations.menu.homepage}</a>
+                    <a
+                      className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
+                      href="#"
+                    >
+                      {translations.menu.homepage}
+                    </a>
                   </li>
                   <li className="w-full">
-                    <a href="#" className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex">
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
+                    >
                       {translations.menu.projects}
                     </a>
                   </li>
                   <li className="w-full h-full">
-                    <a href="#" className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex">
+                    <a
+                      href="#"
+                      className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
+                    >
                       {translations.menu.about}
                     </a>
                   </li>
