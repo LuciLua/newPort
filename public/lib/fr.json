@@ -8,6 +8,8 @@
         "homepage": "Maison",
         "projects": "Projets",
         "about": "Sur moi",
+        "config": "Paramètres",
+        "theme_config": "Basculer le Thème",
         "primary_btn": "Parle moi"
     },
     "initial_box": {

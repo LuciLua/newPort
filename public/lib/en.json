@@ -8,6 +8,8 @@
         "homepage": "Homepage",
         "projects": "Projects",
         "about": "About me",
+        "config": "Settings",
+        "theme_config": "Toggle Theme",
         "primary_btn": "Talk with me"
     },
     "initial_box": {

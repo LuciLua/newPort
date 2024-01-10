@@ -54,6 +54,13 @@ html.light {
   --bg-medium: #ddd;
   --bg-medium-soft: #f4f4f4;
 
+  --bg-dropdown: #ddd;
+  --bg-dropdown-hover: #252525;
+  --bg-dropdown-active: #ffffff;
+  --text-dropdown: #0e0e0e;
+  --text-dropdown-hover: #fafafa;
+  
+
   --lines_contrast: #000;
   --text-default: #121212;
   --text-h1: #000000;
@@ -63,6 +70,8 @@ html.light {
 
   --btn-bg-primary: #000;
   --btn-text-primary: #fff;
+
+
 }
 
 :root body.dark,
@@ -71,6 +80,12 @@ html.dark {
   --bg-default-opacity50: #0a0b0b75;
   --bg-medium: #343539;
   --bg-medium-soft: #161617;
+
+  --bg-dropdown: #27272b;
+  --bg-dropdown-hover: #33333b;
+  --bg-dropdown-active: #0d0d0e;
+  --text-dropdown: #eae8ee;
+  --text-dropdown-hover: #ffffff;
 
   --lines-contrast: #ffffff;
   --text-default: #9394a1;
