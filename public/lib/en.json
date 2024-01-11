@@ -12,6 +12,9 @@
         "theme_config": "Toggle Theme",
         "primary_btn": "Talk with me"
     },
+    "contact": {
+        "sendMessage": "Send me a message now"
+    },
     "initial_box": {
         "h1": "Luci Lua",
         "h2": "Frontend Developer",
@@ -63,7 +66,11 @@
     },
     "about": {
         "h1": "About me",
-        "h2": "A little about myself"
+        "h2": "A little about myself",
+        "about_1": "I am a person who loves technology and always seeks to learn the newest tools to shape my ideas, trying to meet personal and others' needs. I graduated in Arts and Design from the Federal University of Juiz de Fora and in Cinema and Audiovisual, also at UFJF.",
+        "about_2": "My education provides me, in addition to all the artistic and theoretical knowledge in these areas, with a repertoire rich in innovative and interactive ideas, bringing to my projects a conceptual and theoretical complexity that, combined with the development process, adds some extra layers to my work, making what I produce truly unique and exclusive.",
+        "about_3": "I started programming in 2019, and since then, I have been in constant learning about everything that arouses my curiosity. I began by developing simple websites with HTML, CSS, and JavaScript, and today, I can create something more complex using React, Next.js, Typescript, and other frontend tools.",
+        "about_4": "Although I focus a lot on frontend, I can also develop CRUDs with Node and Express and manipulate data in databases (MySql and MongoDB). Some of my projects are experiments where I integrate frontend with backend, seeking to understand more about concepts and best practices."
     },
     "education": {
         "h1": "Education",

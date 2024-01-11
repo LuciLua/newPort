@@ -309,7 +309,7 @@ export default function homepage() {
         </span>
       </p>
       <HorizontalScrolling />
-      <div className="h-[100dvh] bg-white flex justify-center items-center">
+      <div className="h-[100dvh] bg-white flex justify-center items-center" id="contact">
         <Form />
       </div>
     </div>

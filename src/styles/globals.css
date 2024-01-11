@@ -73,10 +73,10 @@ html.light {
 
 :root body.dark,
 html.dark {
-  --bg-default: #0e1017;
+  --bg-default: #0a0b0e;
   --bg-default-opacity50: #13131b75;
   --bg-medium: #343539;
-  --bg-medium-soft: #191924;
+  --bg-medium-soft: #15151a;
 
   --bg-dropdown: #27272b;
   --bg-dropdown-hover: #33333b;
@@ -84,7 +84,7 @@ html.dark {
   --text-dropdown: #eae8ee;
   --text-dropdown-hover: #ffffff;
 
-  --lines-contrast: rgb(105, 103, 117);
+  --lines-contrast: rgb(210, 210, 210);
   --text-default: #9394a1;
   --text-h1: #e8eaff;
   --text-h2: #616161;

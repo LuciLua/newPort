@@ -12,6 +12,9 @@
         "theme_config": "Basculer le Thème",
         "primary_btn": "Parle moi"
     },
+    "contact": {
+        "sendMessage": "Envoyez-moi un message maintenant"
+    },
     "initial_box": {
         "h1": "Luci Lua",
         "h2": "Développeur frontend",
@@ -63,7 +66,11 @@
     },
     "about": {
         "h1": "Sur moi",
-        "h2": "un peu de moi"
+        "h2": "un peu de moi",
+        "about_1": "Je suis une personne passionnée par la technologie et je cherche toujours à apprendre les nouvelles technologies pour donner forme à mes idées, en essayant de répondre aux besoins personnels et des autres. Je suis diplômée en Arts et Design de l'Université Fédérale de Juiz de Fora et en Cinéma et Audiovisuel, également à l'UFJF.",
+        "about_2": "Ma formation me procure, en plus de toutes les connaissances artistiques et théoriques dans ces domaines, un répertoire riche en idées novatrices et interactives, apportant à mes projets une complexité conceptuelle et théorique qui, ajoutée au processus de développement, apporte quelques couches supplémentaires à mon travail, le rendant vraiment unique et exclusif.",
+        "about_3": "J'ai commencé à programmer en 2019, et depuis, je suis en apprentissage constant sur tout ce qui suscite ma curiosité. J'ai commencé par développer des sites simples avec HTML, CSS et JavaScript et aujourd'hui, je suis capable de créer quelque chose de plus complexe en utilisant React, Next.js, Typescript et d'autres outils pour le frontend.",
+        "about_4": "Bien que je me concentre principalement sur le frontend, je suis également capable de développer des CRUD avec Node et Express et de manipuler des données dans des bases de données (MySql et MongoDB). Certains de mes projets sont des expérimentations où j'intègre le frontend avec le backend, cherchant à comprendre davantage les concepts et les bonnes pratiques."
     },
     "education": {
         "h1": "Éducation",
