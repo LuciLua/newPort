@@ -5,6 +5,7 @@ import { Menu } from "../../components/Menu/Menu"
 import { ProjectModal } from "../../components/ProjectModal"
 import { CurriculumModal } from "../../components/CurriculumModal"
 import { notFound } from "next/navigation"
+import { Metadata } from "next"
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
@@ -12,6 +13,15 @@ const montserrat = Montserrat({
 })
 
 const locales = ["en", "pt", "fr"]
+
+export const metadata: Metadata = {
+  title: 'LuciLua Portfólio',
+  description: 'Frontend Developer Portfólio - Luci Lua',
+  authors: [{ name: 'Lúcia Maria Rosa Guelber', url: 'https://lucilua.com.br/' }, { name: 'Luci Lua', url: 'https://lucilua.com.br/' }, { name: 'LuciLua', url: 'https://lucilua.com.br/' }],
+  creator: 'LuciLua',
+  twitter: { site: 'https://twitter.com/l4dev', creator: 'LuciLua', description: 'My Twitter' },
+  keywords: ['LuciLua, frontend, developer, backend, web developer, desenvolvimento de sites, portfolio, Luci Lua']
+}
 
 export default function root_layout({ children, params }) {
   const { locale } = params
