@@ -6,6 +6,7 @@ import { useRef } from "react"
 import { toast } from "react-toastify"
 import { useTranslation } from "../hooks/useTranslation"
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion"
+import Link from "next/link"
 
 export function InitialBox() {
   const mailToRef = useRef(null)
@@ -65,12 +66,12 @@ export function InitialBox() {
               </h1>
               <p className="font-[500]">{translations.initial_box.p}</p>
               <div className="flex w-fit xl:gap-5 gap-2 mt-[30px] z-20">
-                <button className="bg-[var(--btn-bg-primary)] text-[var(--btn-text-primary)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
+                <Link href={`/${lang}/#contact`} className="bg-[var(--btn-bg-primary)] text-[var(--btn-text-primary)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
                   {translations.initial_box.primary_btn}
-                </button>
-                <button className="bg-[var(--bg-medium)] text-[var(--text-h1)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
+                </Link>
+                <Link href={`/${lang}/about`} className="bg-[var(--bg-medium)] text-[var(--text-h1)] px-[30px] py-[10px] font-[500] rounded-[3px] text-nowrap">
                   {translations.initial_box.secondary_btn}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
