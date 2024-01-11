@@ -20,13 +20,14 @@ export function ViewCV() {
         href="/assets/cv/curriculum.pdf"
         className="bg-[var(--bg-medium)] text-[var(--text-h1)] px-4 py-1 rounded-[30px]"
       >
-        {translations ? translations.education.download_cv : 'Download CV'}
+        {translations ? translations.education.download_cv : "Download CV"}
       </a>
       <button
         className="border-b-[1px] border-b-[var(--text-h1)] text-[var(--text-h1)] flex gap-1 justify-center items-center h-fit"
         onClick={() => openCV()}
       >
-        <AiOutlineEye className="font-[12px]" /> {translations ? translations.education.view_cv : 'View CV'}
+        <AiOutlineEye className="font-[12px]" />{" "}
+        {translations ? translations.education.view_cv : "View CV"}
       </button>
     </>
   )

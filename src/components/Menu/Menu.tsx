@@ -43,8 +43,14 @@ export function Menu() {
               <li>
                 <Link href={`/${lang}/`}>{translations.menu.homepage}</Link>
               </li>
-              <li><Link href={`/${lang}/projects`}>{translations.menu.projects}</Link></li>
-              <li><Link href={`/${lang}/about`}>{translations.menu.about}</Link></li>
+              <li>
+                <Link href={`/${lang}/projects`}>
+                  {translations.menu.projects}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/about`}>{translations.menu.about}</Link>
+              </li>
               <li>
                 <ItemMenuDropdown
                   label={translations.menu.config}

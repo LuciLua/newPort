@@ -28,7 +28,7 @@ export function EducationBox({
   credentialsLabel,
   style,
   moreText,
-  idCourse
+  idCourse,
 }: EducationBoxProps) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -50,7 +50,7 @@ export function EducationBox({
     credentialsLabel,
     style,
     moreText,
-    idCourse
+    idCourse,
   }
 
   const [newCourseEducation, setNewCourseEducation] = useState(course)
@@ -93,14 +93,18 @@ export function EducationBox({
           </span>
         </div>
         <h2 className="font-[500] text-[14px] py-[4px] text-[var(--text-h2)]">
-          {newCourseEducation ?  newCourseEducation.date : date}
+          {newCourseEducation ? newCourseEducation.date : date}
         </h2>
       </div>
       <div className="w-full mt-[10px] text-[15px] text-[var(--text-default)]">
         {moreText ? (
-          <MoreText numOfLines={2}>{newCourseEducation ?  newCourseEducation.description : description}</MoreText>
+          <MoreText numOfLines={2}>
+            {newCourseEducation ? newCourseEducation.description : description}
+          </MoreText>
         ) : (
-          <p>{newCourseEducation ?  newCourseEducation.description : description}</p>
+          <p>
+            {newCourseEducation ? newCourseEducation.description : description}
+          </p>
         )}
       </div>
       {newCourseEducation && credentials && (
@@ -109,7 +113,9 @@ export function EducationBox({
           target="_blank"
           className="self-start py-[10px] font-[400] text-[14px] underline text-[var(--text-default)]"
         >
-          {newCourseEducation ? newCourseEducation.credentials : credentialsLabel}
+          {newCourseEducation
+            ? newCourseEducation.credentials
+            : credentialsLabel}
         </a>
       )}
     </motion.div>

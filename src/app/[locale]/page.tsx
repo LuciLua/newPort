@@ -38,19 +38,18 @@ import { Skill } from "../../components/Skill"
 import { TitleSkills } from "../../components/TitleSkills"
 
 export default function homepage() {
-
   const skills_backend = [
     {
       label: "NodeJs",
-      icon: <BiLogoNodejs className="text-[30px]" />
+      icon: <BiLogoNodejs className="text-[30px]" />,
     },
     {
       label: "Javascript",
-      icon: <BiLogoJavascript className="text-[30px]" />
+      icon: <BiLogoJavascript className="text-[30px]" />,
     },
     {
       label: "Express",
-      icon: <SiExpress className="text-[30px]" />
+      icon: <SiExpress className="text-[30px]" />,
     },
     {
       label: "Postgresql",
@@ -67,71 +66,70 @@ export default function homepage() {
     {
       label: "Python",
       icon: <SiPython className="text-[30px]" />,
-    }
+    },
   ]
 
   const skills_frontend = [
     {
       label: "HTML",
-      icon: <BiLogoHtml5 className="text-[30px]" />
+      icon: <BiLogoHtml5 className="text-[30px]" />,
     },
     {
       label: "CSS",
-      icon: <BiLogoCss3 className="text-[30px]" />
+      icon: <BiLogoCss3 className="text-[30px]" />,
     },
     {
       label: "TailwindCSS",
-      icon: <BiLogoTailwindCss className="text-[30px]" />
+      icon: <BiLogoTailwindCss className="text-[30px]" />,
     },
     {
       label: "Typescript",
-      icon: <BiLogoTypescript className="text-[30px]" />
+      icon: <BiLogoTypescript className="text-[30px]" />,
     },
     {
       label: "React",
-      icon: <BiLogoReact className="text-[30px]" />
+      icon: <BiLogoReact className="text-[30px]" />,
     },
     {
       label: "AngularJs",
-      icon: <BiLogoAngular className="text-[30px]" />
+      icon: <BiLogoAngular className="text-[30px]" />,
     },
     {
       label: "VueJs",
-      icon: <BiLogoVuejs className="text-[30px]" />
+      icon: <BiLogoVuejs className="text-[30px]" />,
     },
     {
       label: "NextJs",
-      icon: <SiNextdotjs className="text-[30px]" />
+      icon: <SiNextdotjs className="text-[30px]" />,
     },
     {
       label: "JavaScript",
-      icon: <BiLogoJavascript className="text-[30px]" />
-    }
-  ];
+      icon: <BiLogoJavascript className="text-[30px]" />,
+    },
+  ]
 
   const skills_others = [
     {
       label: "Git",
-      icon: <BiLogoGit className="text-[30px]" />
+      icon: <BiLogoGit className="text-[30px]" />,
     },
     {
       label: "GitHub",
-      icon: <BiLogoGithub className="text-[30px]" />
+      icon: <BiLogoGithub className="text-[30px]" />,
     },
     {
       label: "SEO",
-      icon: <BiWorld className="text-[30px]" />
+      icon: <BiWorld className="text-[30px]" />,
     },
     {
       label: "NPM and Yarn",
-      icon: <SiNpm className="text-[30px]" />
+      icon: <SiNpm className="text-[30px]" />,
     },
     {
       label: "UI/UX Design",
-      icon: <SiAdobeindesign className="text-[30px]" />
-    }
-  ];
-
+      icon: <SiAdobeindesign className="text-[30px]" />,
+    },
+  ]
 
   return (
     <div className="flex w-full h-full justify-center max-w-[100vw] overflow-x-hidden flex-col bg-[var(--bg-default)] ">
@@ -260,24 +258,42 @@ export default function homepage() {
           <div className="w-full xl:w-full flex flex-wrap xl:justify-start justify-center gap-4 border-[1px] border-[var(--border-medium)] rounded-[12px]">
             <TitleSkills title="backend" />
             <ul className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
-              {skills_backend.map(skill => {
-                return (<Skill key={`b_${skill.label}`} icon={skill.icon} label={skill.label} />)
+              {skills_backend.map((skill) => {
+                return (
+                  <Skill
+                    key={`b_${skill.label}`}
+                    icon={skill.icon}
+                    label={skill.label}
+                  />
+                )
               })}
             </ul>
           </div>
           <div className="w-full xl:w-full   flex flex-wrap  justify-center gap-4 border-[1px] relative border-[var(--border-medium)] rounded-[12px]">
             <TitleSkills title="frontend" main />
             <ul className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
-              {skills_frontend.map(skill => {
-                return (<Skill key={`f_${skill.label}`} icon={skill.icon} label={skill.label} />)
+              {skills_frontend.map((skill) => {
+                return (
+                  <Skill
+                    key={`f_${skill.label}`}
+                    icon={skill.icon}
+                    label={skill.label}
+                  />
+                )
               })}
             </ul>
           </div>
           <div className="w-full xl:w-full   flex flex-wrap xl:justify-start justify-center gap-4  border-[1px] border-[var(--border-medium)] rounded-[12px]">
             <TitleSkills title="others" />
             <ul className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
-              {skills_others.map(skill => {
-                return (<Skill key={`o_${skill.label}`} icon={skill.icon} label={skill.label} />)
+              {skills_others.map((skill) => {
+                return (
+                  <Skill
+                    key={`o_${skill.label}`}
+                    icon={skill.icon}
+                    label={skill.label}
+                  />
+                )
               })}
             </ul>
           </div>
