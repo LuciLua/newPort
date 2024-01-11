@@ -13,7 +13,7 @@
         "primary_btn": "Talk with me"
     },
     "initial_box": {
-        "h1": "LuciLua",
+        "h1": "Luci Lua",
         "h2": "Frontend Developer",
         "about_me": "About me",
         "p": "I am a web developer focused on frontend, I also have knowledge in backend. I love technology and study continuously, always looking to learn what's new. I have a degree in Arts and Design from UFJF and I have a degree in Cinema and Audiovisual from the same institution.",
@@ -57,9 +57,41 @@
     },
     "skills": {
         "h1": "Skills",
-        "h2": "Hard Skills"
+        "h2": "Hard Skills",
+        "others": "Others",
+        "main": "Main"
+    },
+    "about": {
+        "h1": "About me",
+        "h2": "A little about myself"
     },
     "education": {
-        "h1": "Education"
+        "h1": "Education",
+        "download_cv": "Download CV",
+        "view_cv": "View CV",
+        "box_course_webModerno": {
+            "id": "webModerno",
+            "title": "Complete Modern Web Course - Udemy",
+            "date": "2021-2023",
+            "description": "In this course, I learned about Javascript, Web Concepts, HTML and CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, Database (relational and NoSQL) and Express.",
+            "credentials": "Credentials",
+            "duration": "97 hours"
+        },
+        "box_course_biArts": {
+            "id": "biArts",
+            "title": "Interdisciplinary Bachelor's Degree in Arts and Design | UFJF",
+            "date": "2019-2022",
+            "description": "Graduated in Arts and Design from UFJF, I had contact with the areas of Design, Cinema and Audiovisual, Fashion, and Visual Arts. During this period, I absorbed content related to the arts and their reverberations.",
+            "credentials": "University Degree",
+            "duration": "3 years"
+        },
+        "box_course_biCinema": {
+            "id": "biCinema",
+            "title": "Bachelor's Degree in Cinema and Audiovisual | UFJF",
+            "date": "2022-2024",
+            "description": "As a Cinema and Audiovisual student I have knowledge about screenwriting, montage and editing (of videos/films), film theory, among others. I have already produced some audiovisual content and films.I directed and produced the short film Hidrofobia.",
+            "credentials": "University Degree",
+            "duration": "2 years"
+        }
     }
 }

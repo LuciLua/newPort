@@ -63,7 +63,7 @@ export function HorizontalScrolling() {
           <motion.div
             key={"slide_1"}
             initial={{ opacity: 0, scale: 0.8 }}
-            className="flex flex-col absolu.te"
+            className="flex flex-col relative"
             style={{ x: x, y: y, transition: "0.3s", scale: 1 }}
             whileInView={{ opacity: 1 }}
             exit={{ opacity: 0 }}

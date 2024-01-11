@@ -13,7 +13,7 @@
         "primary_btn": "Parle moi"
     },
     "initial_box": {
-        "h1": "LuciLua",
+        "h1": "Luci Lua",
         "h2": "Développeur frontend",
         "about_me": "sur moi",
         "p": "Je suis un développeur web axé sur le frontend, j'ai également des connaissances en backend. J'aime la technologie et j'étudie continuellement, cherchant toujours à apprendre les nouveautés. Je suis diplômée en Arts et Design de l'UFJF et j'ai une licence en Cinéma et Audiovisuel de la même institution.",
@@ -57,9 +57,41 @@
     },
     "skills": {
         "h1": "Compétences",
-        "h2": "Capacités techniques"
+        "h2": "Capacités techniques",
+        "others": "Autres",
+        "main": "Principal"
+    },
+    "about": {
+        "h1": "Sur moi",
+        "h2": "un peu de moi"
     },
     "education": {
-        "h1": "Éducation"
+        "h1": "Éducation",
+        "download_cv": "Télécharger CV",
+        "view_cv": "Voir CV",
+        "box_course_webModerno": {
+            "id": "webModerno",
+            "title": "Cours complet sur le développement web moderne - Udemy",
+            "date": "2021-2023",
+            "description": "Dans ce cours, j'ai appris sur Javascript, les concepts Web, HTML et CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, la base de données (relationnelle et NoSQL) et Express.",
+            "credentials": "Certificats",
+            "duration": "97 heures"
+        },
+        "box_course_biArts": {
+            "id": "biArts",
+            "title": "Diplôme de baccalauréat interdisciplinaire en arts et design | UFJF",
+            "date": "2019-2022",
+            "description": "Diplômé en arts et design de l'UFJF, j'ai eu des contacts avec les domaines du design, du cinéma et de l'audiovisuel, de la mode et des arts visuels. Pendant cette période, j'ai assimilé du contenu lié aux arts et à leurs répercussions.",
+            "credentials": "Diplôme universitaire",
+            "duration": "3 ans"
+        },
+        "box_course_biCinema": {
+            "id": "biCinema",
+            "title": "Diplôme de baccalauréat en cinéma et audiovisuel | UFJF",
+            "date": "2022-2024",
+            "description": "En tant qu'étudiant en cinéma et audiovisuel, j'ai des connaissances en scénarisation, montage et édition (de vidéos/films), théorie du cinéma, entre autres. J'ai déjà produit du contenu audiovisuel et des films. J'ai réalisé et produit le court métrage Hidrofobia.",
+            "credentials": "Diplôme universitaire",
+            "duration": "2 ans"
+        }
     }
 }

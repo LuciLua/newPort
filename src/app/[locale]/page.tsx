@@ -34,8 +34,105 @@ import { HorizontalScrolling } from "../../components/HorizontalScrolling"
 import { TitleHomeSections } from "../../components/TitleHomeSections"
 import { DiscoveryMoreProjects } from "../../components/Btns/DiscoveyMoreProjects"
 import { Form } from "../../components/Form"
+import { Skill } from "../../components/Skill"
+import { TitleSkills } from "../../components/TitleSkills"
 
 export default function homepage() {
+
+  const skills_backend = [
+    {
+      label: "NodeJs",
+      icon: <BiLogoNodejs className="text-[30px]" />
+    },
+    {
+      label: "Javascript",
+      icon: <BiLogoJavascript className="text-[30px]" />
+    },
+    {
+      label: "Express",
+      icon: <SiExpress className="text-[30px]" />
+    },
+    {
+      label: "Postgresql",
+      icon: <SiPostgresql className="text-[30px]" />,
+    },
+    {
+      label: "MySQL",
+      icon: <SiMysql className="text-[30px]" />,
+    },
+    {
+      label: "MongoDB",
+      icon: <SiMongodb className="text-[30px]" />,
+    },
+    {
+      label: "Python",
+      icon: <SiPython className="text-[30px]" />,
+    }
+  ]
+
+  const skills_frontend = [
+    {
+      label: "HTML",
+      icon: <BiLogoHtml5 className="text-[30px]" />
+    },
+    {
+      label: "CSS",
+      icon: <BiLogoCss3 className="text-[30px]" />
+    },
+    {
+      label: "TailwindCSS",
+      icon: <BiLogoTailwindCss className="text-[30px]" />
+    },
+    {
+      label: "Typescript",
+      icon: <BiLogoTypescript className="text-[30px]" />
+    },
+    {
+      label: "React",
+      icon: <BiLogoReact className="text-[30px]" />
+    },
+    {
+      label: "AngularJs",
+      icon: <BiLogoAngular className="text-[30px]" />
+    },
+    {
+      label: "VueJs",
+      icon: <BiLogoVuejs className="text-[30px]" />
+    },
+    {
+      label: "NextJs",
+      icon: <SiNextdotjs className="text-[30px]" />
+    },
+    {
+      label: "JavaScript",
+      icon: <BiLogoJavascript className="text-[30px]" />
+    }
+  ];
+
+  const skills_others = [
+    {
+      label: "Git",
+      icon: <BiLogoGit className="text-[30px]" />
+    },
+    {
+      label: "GitHub",
+      icon: <BiLogoGithub className="text-[30px]" />
+    },
+    {
+      label: "SEO",
+      icon: <BiWorld className="text-[30px]" />
+    },
+    {
+      label: "NPM and Yarn",
+      icon: <SiNpm className="text-[30px]" />
+    },
+    {
+      label: "UI/UX Design",
+      icon: <SiAdobeindesign className="text-[30px]" />
+    }
+  ];
+
+
   return (
     <div className="flex w-full h-full justify-center max-w-[100vw] overflow-x-hidden flex-col bg-[var(--bg-default)] ">
       <div className="flex w-full max-w-[1300px] h-fit xl:max-h-fit xl:min-h-[900px] xl:h-fit px-[10px] pt-[80px]  items-center pb-[40px] mx-auto">
@@ -116,44 +213,41 @@ export default function homepage() {
         <TitleHomeSections section="education" />
         <div className="flex w-full justify-center gap-5 flex-wrap p-[20px]">
           <EducationBox
-            key={"course_1"}
-            titleCourse="Curso Web Moderno Completo - Udemy"
-            timeConclusion="97 hours"
-            dateConclusion="2021-2023"
-            courseDescription="In this course, I learned about Javascript, Web Concepts, HTML and CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, Database (relational and NoSQL) and Express."
-            credential
-            credentialLink="https://www.udemy.com/certificate/UC-495b9d41-0005-46b2-9530-dae148592fa8/"
-            credentialLabel="Credentials"
+            idCourse="webModerno"
+            key={"webModerno"}
+            title="Curso Web Moderno Completo - Udemy"
+            duration="97 hours"
+            date="2021-2023"
+            description="In this course, I learned about Javascript, Web Concepts, HTML and CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, Database (relational and NoSQL) and Express."
+            credentials
+            credentialsLink="https://www.udemy.com/certificate/UC-495b9d41-0005-46b2-9530-dae148592fa8/"
+            credentialsLabel="Credentials"
           />
           <EducationBox
-            key={"course_2"}
+            idCourse="biArts"
+            key={"biArts"}
             style="opacity-90 xl:max-w-[600px]"
-            titleCourse="Bacharelado Interdisciplinar em Artes e Design | UFJF"
-            timeConclusion="3 years"
-            dateConclusion="2019-2022"
-            courseDescription="Graduated in Arts and Design from UFJF, I had contact with the areas of Design, Cinema and Audiovisual, Fashion, and Visual Arts. During this period, I absorbed content related to the arts and their reverberations."
-            credential
-            credentialLink="/docs/arts.pdf"
-            credentialLabel="University Degree"
+            title="Bacharelado Interdisciplinar em Artes e Design | UFJF"
+            duration="3 years"
+            date="2019-2022"
+            description="Graduated in Arts and Design from UFJF, I had contact with the areas of Design, Cinema and Audiovisual, Fashion, and Visual Arts. During this period, I absorbed content related to the arts and their reverberations."
+            credentials
+            credentialsLink="/docs/arts.pdf"
+            credentialsLabel="University Degree"
             moreText
           />
           <EducationBox
-            key={"course_3"}
+            idCourse="biCinema"
+            key={"biCinema"}
             style="opacity-90 xl:max-w-[600px]"
-            titleCourse="Bacharelado em Cinema e Audiovisual | UFJF"
-            timeConclusion="2 years"
-            dateConclusion="2022-2024"
-            courseDescription="As a Cinema and Audiovisual student I have knowledge about screenwriting, montage and editing (of videos/films), film theory, among others. I have already produced some audiovisual content and films."
+            title="Bacharelado em Cinema e Audiovisual | UFJF"
+            duration="2 years"
+            date="2022-2024"
+            description="As a Cinema and Audiovisual student I have knowledge about screenwriting, montage and editing (of videos/films), film theory, among others. I have already produced some audiovisual content and films."
             moreText
           />
 
           <div className="flex gap-5 justify-center pt-10 items-center w-full">
-            <a
-              href="/assets/cv/curriculum.pdf"
-              className="bg-[var(--bg-medium)] text-[var(--text-h1)] px-4 py-1 rounded-[30px]"
-            >
-              Download CV
-            </a>
             <ViewCV />
             <CurriculumModal />
           </div>
@@ -163,111 +257,30 @@ export default function homepage() {
       <div className="mx-auto w-full max-w-[1300px] py-[20px] px-[10px]">
         <TitleHomeSections section="skills" />
         <div className="flex justify-around py-10 w-full xl:flex-row flex-col items-start gap-5">
-          <ul className="w-full xl:w-full flex flex-wrap xl:justify-start justify-center gap-4 border-[1px] border-[var(--border-medium)] rounded-[12px]">
-            <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[var(--bg-medium)] text-[var(--text-h1)] rounded-tl-[12px] rounded-tr-[12px]">
-              Backend
-            </h3>
-            <div className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoNodejs className="text-[30px]" />
-                NodeJs
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoJavascript className="text-[30px]" />
-                JavaScript
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiExpress className="text-[30px]" />
-                Express
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiPostgresql className="text-[30px]" />
-                Postgresql
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiMysql className="text-[30px]" />
-                MySQL
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiMongodb className="text-[30px]" />
-                MongoDB
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiPython className="text-[30px]" />
-                Python
-              </li>
-            </div>
-          </ul>
-          <ul className="w-full xl:w-full   flex flex-wrap  justify-center gap-4 border-[1px] relative border-[var(--border-medium)] rounded-[12px]">
-            <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex text-[var(--bg-default)] bg-[var(--text-h1)] rounded-tl-[12px] rounded-tr-[12px]">
-              Frontend
-            </h3>
-            <h4 className="bg-[var(--btn-text-primary)] text-[var(--btn-bg-primary)] rounded-[30px] px-5 border-[3px] font-[700] text-[15px] border-[var(--btn-bg-primary)] absolute top-[-12px] w-fit h-fit">
-              Main
-            </h4>
-            <div className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoHtml5 className="text-[30px]" />
-                HTML
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoCss3 className="text-[30px]" />
-                CSS
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoTailwindCss className="text-[30px]" />
-                TailwindCSS
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoTypescript className="text-[30px]" />
-                Typescript
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoReact className="text-[30px]" />
-                React
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoAngular className="text-[30px]" />
-                AngularJs
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoVuejs className="text-[30px]" />
-                VueJs
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiNextdotjs className="text-[30px]" />
-                NextJs
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoJavascript className="text-[30px]" />
-                JavaScript
-              </li>
-            </div>
-          </ul>
-          <ul className="w-full xl:w-full   flex flex-wrap xl:justify-start justify-center gap-4  border-[1px] border-[var(--border-medium)] rounded-[12px]">
-            <h3 className="font-[600] text-[20px] py-4 w-full justify-center items-center flex bg-[var(--bg-medium)] text-[var(--text-h1)] rounded-tl-[12px] rounded-tr-[12px]">
-              Others
-            </h3>
-            <div className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoGit className="text-[30px]" />
-                Git
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiLogoGithub className="text-[30px]" />
-                GitHub
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <BiWorld className="text-[30px]" /> SEO
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiNpm className="text-[30px]" /> NPM and Yarn
-              </li>
-              <li className="border-[1px] border-[var(--border-medium)] rounded-[30px] flex text-[16px] justify-center items-center gap-2 px-2 text-[var(--text-h3)]">
-                <SiAdobeindesign className="text-[30px]" /> UI/UX Design
-              </li>
-            </div>
-          </ul>
+          <div className="w-full xl:w-full flex flex-wrap xl:justify-start justify-center gap-4 border-[1px] border-[var(--border-medium)] rounded-[12px]">
+            <TitleSkills title="backend" />
+            <ul className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
+              {skills_backend.map(skill => {
+                return (<Skill key={`b_${skill.label}`} icon={skill.icon} label={skill.label} />)
+              })}
+            </ul>
+          </div>
+          <div className="w-full xl:w-full   flex flex-wrap  justify-center gap-4 border-[1px] relative border-[var(--border-medium)] rounded-[12px]">
+            <TitleSkills title="frontend" main />
+            <ul className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
+              {skills_frontend.map(skill => {
+                return (<Skill key={`f_${skill.label}`} icon={skill.icon} label={skill.label} />)
+              })}
+            </ul>
+          </div>
+          <div className="w-full xl:w-full   flex flex-wrap xl:justify-start justify-center gap-4  border-[1px] border-[var(--border-medium)] rounded-[12px]">
+            <TitleSkills title="others" />
+            <ul className="p-5 flex flex-wrap xl:justify-start justify-evenly gap-3">
+              {skills_others.map(skill => {
+                return (<Skill key={`o_${skill.label}`} icon={skill.icon} label={skill.label} />)
+              })}
+            </ul>
+          </div>
         </div>
       </div>
       <p className="xl:text-[18px] text-nowrap text-sm w-full h-fit flex justify-center items-center font-[500] py-4 bg-black text-[#fff]">

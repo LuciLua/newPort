@@ -5,7 +5,7 @@ import { useTranslation } from "../hooks/useTranslation"
 export function TitleHomeSections({
   section,
 }: {
-  section: "projects" | "skills" | "education"
+  section: "projects" | "skills" | "education" | "about"
 }) {
   const { translations } = useTranslation()
 
@@ -23,6 +23,10 @@ export function TitleHomeSections({
   if (section === "education") {
     title = translations.education.h1
     h2 = undefined
+  }
+  if (section === "about") {
+    title = translations.about.h1
+    h2 = translations.about.h2
   }
 
   return (

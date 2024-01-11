@@ -13,7 +13,7 @@
         "primary_btn": "Fale comigo"
     },
     "initial_box": {
-        "h1": "LuciLua",
+        "h1": "Luci Lua",
         "h2": "Desenvolvedora front-end",
         "about_me": "Sobre mim",
         "p": "Sou uma desenvolvedora web focada em frontend, também tenho conhecimento em backend. Adoro tecnologia e estudo continuamente, buscando sempre aprender novidades. Sou formada em Artes e Design pela UFJF e possuo graduação em Cinema e Audiovisual pela mesma instituição.",
@@ -57,9 +57,41 @@
     },
     "skills": {
         "h1": "Habilidades",
-        "h2": "Habilidades Técnicas"
+        "h2": "Habilidades Técnicas",
+        "others": "Outros",
+        "main": "Principal"
+    },
+    "about": {
+        "h1": "Sobre mim",
+        "h2": "um pouco sobre mim"
     },
     "education": {
-        "h1": "Educação"
+        "h1": "Educação",
+        "download_cv": "Baixar CV",
+        "view_cv": "Visualizar CV",
+        "box_course_webModerno": {
+            "id": "webModerno",
+            "title": "Curso Completo de Desenvolvimento Web Moderno - Udemy",
+            "date": "2021-2023",
+            "description": "Neste curso, aprendi sobre Javascript, Conceitos Web, HTML e CSS, Ajax Webpack, jQuery, Bootstrap, React, VueJs, Electron, Angular 9, Banco de Dados (relacional e NoSQL) e Express.",
+            "credentials": "Certificado",
+            "duration": "97 horas"
+        },
+        "box_course_biArts": {
+            "id": "biArts",
+            "title": "Bacharelado Interdisciplinar em Artes e Design | UFJF",
+            "date": "2019-2022",
+            "description": "Graduada em Artes e Design pela UFJF, tive contato com as áreas de Design, Cinema e Audiovisual, Moda e Artes Visuais. Durante esse período, absorvi conteúdo relacionado às artes e suas reverberações.",
+            "credentials": "Diploma Universitário",
+            "duration": "3 anos"
+        },
+        "box_course_biCinema": {
+            "id": "biCinema",
+            "title": "Bacharelado em Cinema e Audiovisual | UFJF",
+            "date": "2022-2024",
+            "description": "Como estudante de Cinema e Audiovisual, tenho conhecimento em roteiro, montagem e edição (de vídeos/filmes), teoria do cinema, entre outros. Já produzi alguns conteúdos audiovisuais e filmes. Dirigi e produzi o curta metragem Hidrofobia.",
+            "credentials": "Diploma Universitário",
+            "duration": "2 anos"
+        }
     }
 }

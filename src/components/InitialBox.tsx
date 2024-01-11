@@ -89,21 +89,21 @@ export function InitialBox() {
             href="https://www.linkedin.com/in/lucia-guelber/"
             target="_blank"
           >
-            <AiFillLinkedin className=" text-[var(--lines-contrast)] text-[36px] w-fit h-fit " />
+            <AiFillLinkedin className=" text-[var(--text-h1)] text-[36px] w-fit h-fit " />
           </a>
           <a
             className="cursor-pointer hover:scale-105 transition-[0.3s]"
             href="https://github.com/lucilua/"
             target="_blank"
           >
-            <AiFillGithub className=" text-[var(--lines-contrast)] text-[36px] w-fit h-fit" />
+            <AiFillGithub className=" text-[var(--text-h1)] text-[36px] w-fit h-fit" />
           </a>
           <div
             className="cursor-pointer hover:scale-105 transition-[0.3s]"
             ref={mailToRef}
             onClick={mailToCopyToClipboard}
           >
-            <BiMailSend className=" text-[var(--lines-contrast)] text-[36px] w-fit h-fit" />
+            <BiMailSend className=" text-[var(--text-h1)] text-[36px] w-fit h-fit" />
           </div>
         </div>
       </div>

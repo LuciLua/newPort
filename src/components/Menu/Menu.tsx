@@ -6,10 +6,11 @@ import { useTranslation } from "../../hooks/useTranslation"
 import { useTheme } from "../../hooks/useTheme"
 import { BiMenu } from "react-icons/bi"
 import { useState } from "react"
+import Link from "next/link"
 
 export function Menu() {
   const { menuStateColor } = useMenuStateColor()
-  const { translations } = useTranslation()
+  const { translations, currentPathname, lang } = useTranslation()
   const { toggleTheme, theme } = useTheme()
 
   const [openMenu, setOpenMenu] = useState(false)
@@ -23,7 +24,7 @@ export function Menu() {
 
   return (
     <div
-      className={`w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${
+      className={`min-w-[100vw] w-full h-[70px] backdrop-blur-[12px] flex justify-center fixed z-40 transition-[1s] ${
         menuStateColor ? hiddenMenuStateColor() : visibleMenuStateColor()
       }`}
     >
@@ -31,19 +32,19 @@ export function Menu() {
         <li className="flex h-full justify-center items-center gap-5">
           <div className="flex flex-col justify-center leading-[20px]">
             <h1 className="text-[22px] font-black">LuciLua /{">"}</h1>
-            <a href="#" className="text-[12px] font-medium">
+            <Link href="#" className="text-[12px] font-medium">
               {translations.menu.logo}
-            </a>
+            </Link>
           </div>
         </li>
         <li>
           <ul className="list-none xl:gap-10 gap-3 flex items-center w-fit h-full font-[600]">
             <div className="lg:flex gap-10 hidden text-[14px]">
               <li>
-                <a href="#">{translations.menu.homepage}</a>
+                <Link href={`/${lang}/`}>{translations.menu.homepage}</Link>
               </li>
-              <li>{translations.menu.projects}</li>
-              <li>{translations.menu.about}</li>
+              <li><Link href={`/${lang}/projects`}>{translations.menu.projects}</Link></li>
+              <li><Link href={`/${lang}/about`}>{translations.menu.about}</Link></li>
               <li>
                 <ItemMenuDropdown
                   label={translations.menu.config}
@@ -81,7 +82,7 @@ export function Menu() {
                   </li>
                   <li className="w-full">
                     <a
-                      href="#"
+                      href="/"
                       className="px-4 py-2 text-sm hover:bg-[var(--bg-dropdown-hover)] hover:text-[var(--text-dropdown-hover)] bg-[var(--bg-dropdown)] text-[var(--text-dropdown)] w-full flex"
                     >
                       {translations.menu.projects}
